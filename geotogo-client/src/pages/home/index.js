@@ -4,7 +4,9 @@ import style from './style.module.scss';
 const HomePage = () => {
 
     return (
-        <div className={style.home}></div>
+        <div className={style.home}>
+        <h1>Home page!</h1>
+        </div>
         ); 
     }
     

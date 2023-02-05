@@ -4,7 +4,9 @@ import style from './style.module.scss';
 const OceaniaPage = () => {
 
     return (
-        <div className={style.home}></div>
+        <div className={style.home}>
+        <h1>Oceania Page!</h1>
+        </div>
         ); 
     }
     

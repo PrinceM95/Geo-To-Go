@@ -4,7 +4,9 @@ import style from './style.module.scss';
 const AsiaPage = () => {
 
     return (
-        <div className={style.home}></div>
+        <div className={style.home}>
+        <h1>Asia Page!</h1>
+        </div>
         ); 
     }
     

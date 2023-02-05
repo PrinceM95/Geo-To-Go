@@ -4,7 +4,9 @@ import style from './style.module.scss';
 const NAPage = () => {
 
     return (
-        <div className={style.home}></div>
+        <div className={style.home}>
+        <h1>North America page!</h1>
+        </div>
         ); 
     }
     

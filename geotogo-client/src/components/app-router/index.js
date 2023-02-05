@@ -7,6 +7,7 @@ import AsiaPage from '../../pages/asia';
 import EuropePage from '../../pages/europe';
 import NAPage from '../../pages/na';
 import SAPage from '../../pages/sa';
+import OceaniaPage from '../../pages/oceania';
 import ContactPage from '../../pages/contact';
 import React from 'react';
 
@@ -19,6 +20,7 @@ const PageSwitch = () => (
         <Route exact path={'/europe'} element={<EuropePage />} />
         <Route exact path={'/na'} element={<NAPage />} />
         <Route exact path={'/sa'} element={<SAPage />} />
+        <Route exact path={'/oceania'} element={<OceaniaPage />} />
         <Route exact path={'/contact'} element={<ContactPage />} />
     </Routes>
 );
