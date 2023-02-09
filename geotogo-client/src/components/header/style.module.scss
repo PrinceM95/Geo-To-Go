@@ -4,7 +4,7 @@
     margin: auto;
     width: 100%;
     background-color: black;
-    height: 2rem;
+    height: 4rem;
     color: white;
     background: #00008B;
     box-shadow: 2px 2px 4px gold, -2px -2px 4px gold;
@@ -13,12 +13,10 @@
         color: gold;
         margin-left: 11rem;
         align-items: center;
-        // margin-right: 1470px;
         border-radius: 6px;
         display: flex;
         min-width: 75px;
         font-size: xx-large;
-        // position: fixed;
     }
 }
 .navList {
@@ -33,7 +31,7 @@
         list-style-type: none;
         margin: 0 20px;
         min-width: 75px;
-        padding: 2px;
+        padding: 6px;
         text-decoration: none;
         background-color: burlywood;
     }
