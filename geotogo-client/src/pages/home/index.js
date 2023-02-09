@@ -9,7 +9,7 @@ const HomePage = () => {
         <div className={style.worldMap}>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">
 <g>
-	<g opacity="0.5">
+	<g opacity="0.9">
 		<g>
             <a title='1' href='/asia'>
                 <path fill="#E52713" d="M1145.97,437.996c-5.124-1.505-3.313-1.505-5.124-2.704c-1.801-1.209-1.801,3.906-2.702,4.214

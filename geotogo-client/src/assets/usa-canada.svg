@@ -1,11 +1,4 @@
-import React from 'react';
-import style from './style.module.scss';
-
-const NAPage = () => {
-
-    return (
-        <div className={style.na}>
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1179 1329.4" >
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1179 1329.4" style="enable-background:new 0 0 890.7 762.2;" xml:space="preserve" xmlns:mapsvg="https://mapsvg.com" mapsvg:geoviewbox="-178.199498 83.116658 -52.648425 18.959170">
 <path id="US-AK" title="Alaska" d="M350.1,587v7.9v7.7v7.6v7.5v7.4v7.3v7.3v7.2v7.1v7v6.9v6.8v6.8v6.7v6.6v6.5v6.5v6.4v6.3v6.3v6.2v6.1v6.1v6v6v5.9
 	v5.8v5.8v5.7v5.7v5.6v5.6l2.3,0.8l2.2,0.8l0.7-1.5l2.4,1.2l2.1,1l1.3-1.3l1.5-1.4l2-0.1l2.2-0.1l1.5-0.1v1.2l-0.5,2l-0.5,1.7
 	l1.2,1.5l0.1,0.2l1.6,0.9l1.5,0.8l0.7,2.3l1.7,1.8l1.3,1.3l1.2,1.3l1.8,1.8l1.2,1.3l1.6,1.7l1,1l0.5,2l0.6,2.3l-0.4,1.4l0.8,0.2
@@ -1773,8 +1766,3 @@ const NAPage = () => {
 	l4-0.5l7.5,2.8l4.6,5.3l3.7,2.6l1.5,1.8l2.4,1.6l5.7,3.4l1.8,0.3l3.3,1.6l2.1-0.2L392.9,607.4L392.9,607.4z M368.6,589.4l-0.8,1
 	l-1.2-1.1l-0.3-0.5l1.4-1.4l0.6,0.1l1.3,0.8l0.5,0.7L368.6,589.4z"></path>
 </svg>
-        </div>
-        ); 
-    }
-    
-    export default NAPage;
