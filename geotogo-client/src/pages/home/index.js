@@ -1,18 +1,25 @@
 import React from 'react';
 import style from './style.module.scss';
+
 // import Continents from '../../components/Continents.js';
 // import Map from '../../assets/worldMap.svg';
 
 const HomePage = () => {
+function handleMouseAsia(e){
+	// document.getElementsByClassName("asia").style.display="block"
+	e.target.style.display = 'block'
+}
 
     return (
         <div className={style.worldMap}>
+		<div className={style.asia}> asia </div>
+		<div className={style.asia_cont}></div>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">
 <g>
 	<g opacity="0.9">
 		<g>
             <a title='1' href='/asia'>
-                <path fill="#E52713" d="M1145.97,437.996c-5.124-1.505-3.313-1.505-5.124-2.704c-1.801-1.209-1.801,3.906-2.702,4.214
+                <path fill="#E52713" onMouseEnter={handleMouseAsia} d="M1145.97,437.996c-5.124-1.505-3.313-1.505-5.124-2.704c-1.801-1.209-1.801,3.906-2.702,4.214
 				c-0.91,0.303-2.697-0.602-2.697-4.214c0-3.607-1.82-1.209-3.019-2.104c-1.19-0.896-3.304-3-6.01-3.612
 				c-2.702-0.602-6.313-3.901-10.527-6.008c-4.219-2.109-8.134-3.311-12.343-2.704c-4.209,0.595-7.214-0.91-12.029-1.818
 				c-4.801-0.905-0.91,1.818,0.303,5.112c1.204,3.318-3.318,1.204-6.925,0.303c-3.612-0.893,3.318-2.704,1.82-4.811

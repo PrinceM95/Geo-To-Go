@@ -6,11 +6,11 @@
     background-color: black;
     height: 4rem;
     color: white;
-    background: #00008B;
-    box-shadow: 2px 2px 4px gold, -2px -2px 4px gold;
+    background: #14558f;
+    box-shadow: 2px 2px 4px #4FFFB0, -2px -2px 4px #4FFFB0;
 
     & h1{
-        color: gold;
+        color: #4FFFB0;
         margin-left: 11rem;
         align-items: center;
         border-radius: 6px;
@@ -33,7 +33,7 @@
         min-width: 75px;
         padding: 6px;
         text-decoration: none;
-        background-color: burlywood;
+        background-color: #4FFFB0;
     }
 
     & a:hover {
