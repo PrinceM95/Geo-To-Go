@@ -1,23 +1,23 @@
 
 .worldMap {
-    width: 50%;
-    margin-right: 400px;
-    border: solid;
-    background-color: #4FFFB0;
+    width: 40%;
+    margin-left: 75px;
+    margin-top: 30px;
+    border: solid .5px #FEBE10;
+    background-color: #002D62;
     border-radius: 60%;
     display: left;
 }
 
 .worldMap path {
-    stroke: black;
-    stroke-width: 2px ;
+    stroke: #FEBE10;
+    stroke-width: .5px ;
     transition: fill 0.3s;
 }
 
 .worldMap :hover {
-    fill: black;
+    fill: #FEBE10;
 }
-
 
 body {
     background-image: url("../../assets/world_map.jpg");

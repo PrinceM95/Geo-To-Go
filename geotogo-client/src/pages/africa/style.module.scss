@@ -1,17 +1,20 @@
 .africa {
-    width: 45%;
-    margin-right: 400px;
-    // border: solid;
-    // background-color: aqua;
+    width: 40%;
+    margin-left: 75px;
+    margin-top: 100px;
+    border: solid 2px #FEBE10;
+    background-color: #002D62;
+    border-radius: 40%;
+    display: left;
 }
 
 .africa path {
-    fill: #CC1100;
+    fill: #DADD98;
     stroke: black;
-    stroke-width: 2px ;
+    stroke-width: .5px ;
     transition: fill 0.3s;
 }
 
 .africa :hover {
-    fill: #000;
+    fill: #FEBE10;
 }
