@@ -5,7 +5,6 @@ import Africa from '../../components/Africa.js';
 
 const AfricaPage = () => {
 
-
     return (
         <div className={style.africa}>
             <svg width="504" height="565" viewBox="0 0 504 565" fill="none" xmlns="http://www.w3.org/2000/svg">

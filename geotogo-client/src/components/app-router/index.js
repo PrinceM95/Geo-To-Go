@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 
-// import LandingPage from '../../pages/landing';
+import LandingPage from '../../pages/landing-page';
 import HomePage from '../../pages/home';
 import AfricaPage from '../../pages/africa';
 import AsiaPage from '../../pages/asia';
@@ -22,6 +22,7 @@ const PageSwitch = () => (
         <Route exact path={'/sa'} element={<SAPage />} />
         <Route exact path={'/oceania'} element={<OceaniaPage />} />
         <Route exact path={'/contact'} element={<ContactPage />} />
+        <Route exact path={'/landing'} element={<LandingPage />} />
     </Routes>
 );
 
