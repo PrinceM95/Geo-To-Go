@@ -5,7 +5,6 @@
     border: solid 2px #FEBE10;
     background-color: #002D62;
     border-radius: 40%;
-    display: left;
 }
 
 .africa path {
@@ -17,4 +16,13 @@
 
 .africa :hover {
     fill: #FEBE10;
+}
+.africaDetail{
+    width: 40%;
+    min-height: 300px;
+    padding: 5px;
+    background-color: white;
+    position:absolute;
+    top: 200px;
+    right: 90px;
 }
