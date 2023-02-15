@@ -3,7 +3,7 @@ import style from './style.module.scss';
 
 const Footer = () => (
     <div className={style.footer}>
-        <div>&copy; WCCI 2023</div>
+        <div>&copy; Geo-To-Go 2023</div>
     </div>
 );
     
