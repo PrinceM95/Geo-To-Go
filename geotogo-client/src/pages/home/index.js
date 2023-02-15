@@ -1,18 +1,13 @@
 import React from 'react';
 import style from './style.module.scss';
 
-// import Continents from '../../components/Continents.js';
-// import Map from '../../assets/worldMap.svg';
+
 
 const HomePage = () => {
-function handleMouseAsia(e){
-	// document.getElementsByClassName("asia").style.display="block"
-	e.target.style.display = 'block'
-}
+
 
     return (
         <div className={style.worldMap}>
-		{/* <div className={style.asia}> asia </div> */}
 		<div className={style.asia_cont}></div>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">
 <g>
