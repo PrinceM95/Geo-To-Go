@@ -36,8 +36,8 @@ const AfricaPage = () => {
             <div className={style.africaDetail}>
                 <h1>{data?.name?.common}</h1>
                 <h3>Capital: {data?.capital}</h3>
-                <h3>Languages: {data?.languages?.ara} {data?.languages?.fra} {data?.languages?.por}</h3>
-                {/* <img src={data?.flags.png}></img> */}
+                <h3>Languages: {data?.languages?.all}</h3>
+                <img src={data?.flags?.png} alt="flag pic"></img>
             </div>
 
         </div>
