@@ -1,14 +1,23 @@
 import React from 'react';
 import style from './style.module.scss';
+import countries from './data';
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
 
 const OceaniaPage = () => {
 
     return (
         <div className={style.oceania}>
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280.000000 878.000000">
-<g transform="translate(0.000000,878.000000) scale(0.100000,-0.100000)"
->
-<path d="M55 8750 c3 -5 13 -10 21 -10 8 0 12 5 9 10 -3 6 -13 10 -21 10 -8 0
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280.000000 878.000000">
+                <g transform="translate(0.000000,878.000000) scale(0.100000,-0.100000)">
+                {countries.map((country, idx) => {
+                    return <>
+                    <Tippy content={country.name}>
+                    <path d={country.d}/>
+                    </Tippy>
+                    </> 
+                })}
+                    {/* <path d="M55 8750 c3 -5 13 -10 21 -10 8 0 12 5 9 10 -3 6 -13 10 -21 10 -8 0
 -12 -4 -9 -10z"/>
 <path d="M26 8726 c3 -9 11 -16 16 -16 13 0 5 23 -10 28 -7 2 -10 -2 -6 -12z"/>
 <path d="M70 8710 c-22 -22 -20 -50 5 -100 21 -41 170 -180 193 -180 12 0 33
@@ -676,12 +685,12 @@ c-22 11 -44 26 -48 33 -9 13 -27 17 -27 5z"/>
 <path d="M10786 344 c-14 -20 -16 -28 -6 -34 17 -10 50 0 50 15 0 8 3 20 6 29
 10 27 -29 18 -50 -10z"/>
 <path d="M11242 83 c-6 -3 -10 -9 -6 -14 7 -12 44 -12 44 0 0 11 -21 19 -38
-14z"/>
-</g>
-</svg>
+14z"/> */}
+                </g>
+            </svg>
 
         </div>
-        ); 
-    }
-    
-    export default OceaniaPage;
+    );
+}
+
+export default OceaniaPage;
