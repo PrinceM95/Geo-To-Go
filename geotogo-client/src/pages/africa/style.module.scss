@@ -1,20 +1,23 @@
 .africa {
-    width: 40%;
+    width: 45%;
     margin-left: 75px;
     margin-top: 100px;
-    border: solid 2px #FEBE10;
-    background-color: #002D62;
+    border: solid 3px black;
+    // background-color: #002D62;
+    background-image: url("../../assets/Savanna.gif");
+    background-size: 130%;
+    background-repeat: no-repeat;
     border-radius: 40%;
     display: left;
 }
 
 .africa path {
-    fill: #DADD98;
+    fill: #1DB954;
     stroke: black;
     stroke-width: .5px ;
     transition: fill 0.3s;
 }
 
 .africa :hover {
-    fill: #FEBE10;
+    fill: #ACE1AF;
 }
