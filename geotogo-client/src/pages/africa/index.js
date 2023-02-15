@@ -25,6 +25,7 @@ const AfricaPage = () => {
 
     return (
         <div className={style.africa}>
+            {/* <StaticExample></StaticExample> */}
             <svg width="504" height="565" viewBox="0 0 504 565" xmlns="http://www.w3.org/2000/svg">
                 {countries.map((country, idx) => {
                     return (

@@ -1,11 +1,16 @@
 .asia {
-    width: 40%;
+    width: 45%;
     margin-left: 75px;
-    margin-top: 100px;
-    border: solid 2px #FEBE10;
-    background-color: #002D62;
+    margin-top: 60px;
+    border: solid 3px white;
+    // background-color: #002D62;
+    background-image: url("../../assets/asia_red2.gif");
+    background-size: 140%;
+    background-repeat: no-repeat;
     border-radius: 40%;
     display: left;
+    // border-radius: 40%;
+    // display: left;
 }
 
 .asia path {
@@ -16,5 +21,5 @@
 }
 
 .asia :hover {
-    fill: #FEBE10;
+    fill: #ACE1AF;
 }

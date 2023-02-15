@@ -2,14 +2,19 @@
     width: 35%;
     margin-left: 75px;
     margin-top: 30px;
-    border: solid 2px #FEBE10;
-    background-color: #002D62;
+    border: solid 3px #DADD98;
+    // background-color: #002D62;
+    background-image: url("../../assets/na.gif");
+    background-size: 210%;
+    background-repeat: no-repeat;
     border-radius: 40%;
     display: left;
+    // border-radius: 40%;
+    // display: left;
 }
 
 .na path {
-    fill: #1DB954;
+    fill: #DADD98;
     stroke: black;
     stroke-width: 1.5px ;
     transition: fill 0.3s;
