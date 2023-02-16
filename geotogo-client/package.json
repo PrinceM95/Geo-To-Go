@@ -19,8 +19,11 @@
     "react-google-charts": "^4.0.0",
     "react-router-dom": "^6.8.0",
     "react-scripts": "^5.0.1",
+    "react-tippy": "^1.4.0",
     "sass": "^1.58.0",
     "scss": "^0.2.4",
+    "tippy": "0.0.0",
+    "tippy.js": "^6.3.7",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
