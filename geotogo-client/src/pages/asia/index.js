@@ -1,15 +1,24 @@
 import React from 'react';
 import style from './style.module.scss';
+import countries from './data';
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
+import { useState } from 'react';
 
 const AsiaPage = () => {
 
     return (
         <div className={style.asia}>
         
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-	 viewBox="0 0 800 600">
-<g id="Asia">
-	<path class="st0" d="M596.818,441.912l0.212,0.038h0.28h0.425l0.335,0.003l0.031,0.072l0.038,0.275l0.102,0.246l-0.206,0.142
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+{countries.map((country, idx) => {
+                    return (
+						<Tippy content={country.name} key = {idx}>
+                    <path d={country.d} onClick= {()=> handleClick(country.name)}/>
+                    </Tippy> )
+					
+                })}
+	{/* <path class="st0" d="M596.818,441.912l0.212,0.038h0.28h0.425l0.335,0.003l0.031,0.072l0.038,0.275l0.102,0.246l-0.206,0.142
 		l-0.088,0.029l-0.089,0.002l-0.21-0.053l-0.12-0.175l-0.347-0.197l-0.143-0.194L596.818,441.912z M638.368,523.805l0.094-0.005
 		l0.32-0.01l0.28-0.043l0.253-0.09l0.392-0.268l0.02-0.034l0.013-0.051l0.064-0.152l0.027-0.033l0.022-0.011l0.409-0.123
 		l0.057-0.031l0.132-0.148l0.223-0.068l0.095-0.043l0.182-0.041l0.168-0.123l0.136-0.077l0.001-0.001l0.018,0.151l-0.082,0.211
@@ -12045,8 +12054,7 @@ const AsiaPage = () => {
 		v0.005l-0.01-0.01l-0.01,0.01l0.005,0.011v0.015v0.005v0.01l-0.019,0.01l-0.034,0.026l-0.019,0.01h-0.024l-0.019,0.026h-0.025
 		l-0.025,0.032l0,0.001l-0.03-0.066l0.002-0.008l0.012-0.037l0.016-0.017l0.003-0.004l0.031-0.052l0.03-0.04l-0.01-0.021h-0.01
 		l0.005,0.01l-0.034,0.011l-0.019-0.033l0.028-0.009v-0.005h0.039L571.155,327.912z"/>
-	<path class="st0" d="M597.128,373.587l0.011,0.016l-0.011,0.011l-0.013-0.011L597.128,373.587z"/>
-</g>
+	<path class="st0" d="M597.128,373.587l0.011,0.016l-0.011,0.011l-0.013-0.011L597.128,373.587z"/> */}
 </svg>
 
         </div>
