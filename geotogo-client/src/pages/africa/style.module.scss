@@ -3,9 +3,8 @@
     margin-left: 75px;
     margin-top: 100px;
     border: solid 3px black;
-    // background-color: #002D62;
     background-image: url("../../assets/Savanna.gif");
-    background-size: 130%;
+    background-size: 140%;
     background-repeat: no-repeat;
     border-radius: 40%;
 }
@@ -20,6 +19,7 @@
 .africa :hover {
     fill: #ACE1AF;
 }
+
 .africaDetail{
     width: 40%;
     min-height: 300px;
@@ -28,4 +28,19 @@
     position:absolute;
     top: 200px;
     right: 90px;
+    background-color: #CC5500;
+    border-radius: 10%;
+    border: solid 3px black;
+    text-align: center;
+    color: black;
+}
+
+.aff{
+    max-width: 500px;
+    height: 125px;
+    border-radius: 40%;
+    border: solid 3px black;
+    position: absolute;
+    top: 675px;
+    left: 450px;
 }

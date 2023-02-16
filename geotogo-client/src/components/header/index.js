@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => (
     <div className={style.header}>
-        <h1>Geo-To-Go!</h1>
+        <h1>Geo-To-Go</h1>
         <ul className={style.navList}>
             <NavLink to="/">HOME</NavLink>
             <NavLink to='/africa'>AF</NavLink>
