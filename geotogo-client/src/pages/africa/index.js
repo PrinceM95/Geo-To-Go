@@ -4,12 +4,15 @@ import countries from './data';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import { useState } from 'react';
+import africaFF from '../../assets/africa_fact_fun.gif';
 
 
 const AfricaPage = () => {
     const[data,setData]= useState({})
+    const[flag,setFlag]= useState(false)
 
     const handleClick = (country) =>{
+        setFlag(true)
         let url=`https://restcountries.com/v3.1/name/${country}`
         fetch(url)
         .then((response)=> response.json())
@@ -37,7 +40,10 @@ const AfricaPage = () => {
                 <h1>{data?.name?.common}</h1>
                 <h3>Capital: {data?.capital}</h3>
                 <h3>Languages: {data?.languages?.ara}</h3>
-                <img src={data?.flags?.png} alt="flag pic"></img>
+                {flag &&<img src={data?.flags?.png} alt="flag pic"></img>}
+            </div>
+            <div className={style.africaFacts}>
+                <img src={africaFF} className={style.aff} alt="logo"></img>
             </div>
 
         </div>

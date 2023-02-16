@@ -4,6 +4,7 @@ import React from 'react';
 import Tippy from '@tippyjs/react';
 import countries from './data';
 import style from './style.module.scss';
+import saFF from '../../assets/africa_fact_fun.gif';
 
 const SAPage = () => {
 
