@@ -1,3 +1,4 @@
+import React from 'react';
 import style from './style.module.scss';
 import countries from './data';
 import Tippy from '@tippyjs/react';
@@ -5,7 +6,6 @@ import 'tippy.js/dist/tippy.css';
 import { useState } from 'react';
 import africaFF from '../../assets/africa_fact_fun.gif';
 
-// https://restcountries.com/v3.1/name/peru
 
 const AfricaPage = () => {
     const[data,setData]= useState({})
@@ -39,7 +39,7 @@ const AfricaPage = () => {
             <div className={style.africaDetail}>
                 <h1>{data?.name?.common}</h1>
                 <h3>Capital: {data?.capital}</h3>
-                <h3>Languages: {data?.languages?.all}</h3>
+                <h3>Languages: {data?.languages?.ara}</h3>
                 {flag &&<img src={data?.flags?.png} alt="flag pic"></img>}
             </div>
             <div className={style.africaFacts}>
