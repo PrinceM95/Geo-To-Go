@@ -9,6 +9,7 @@ const HomePage = () => {
     return (
         <div className={style.worldMap}>
 		<div className={style.asia_cont}></div>
+		<div className={style.prompt}>Click on a continent to begin exploring!</div>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">
 <g>
 	<g opacity="0.9">

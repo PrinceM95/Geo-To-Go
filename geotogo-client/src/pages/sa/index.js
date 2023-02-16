@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './style.module.scss';
+import saFF from '../../assets/africa_fact_fun.gif';
 
 const SAPage = () => {
 
@@ -5141,6 +5142,9 @@ const SAPage = () => {
 		l0.015-0.064l-0.025-0.108l-0.045-0.094l-0.009-0.074l0.08-0.045l0.27,0.308L322.606,39.781z"/>
 </g>
 </svg>
+	<div className={style.asiaFacts}>
+        <img src={saFF} className={style.saf} alt="logo"></img>
+    </div>
 
         </div>
         ); 
