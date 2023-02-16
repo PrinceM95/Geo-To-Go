@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './style.module.scss';
+import asiaFF from '../../assets/africa_fact_fun.gif';
 
 const AsiaPage = () => {
 
@@ -12049,7 +12050,12 @@ const AsiaPage = () => {
 </g>
 </svg>
 
-        </div>
+	<div className={style.asiaFacts}>
+    	<img src={asiaFF} className={style.asf} alt="logo"></img>
+    </div>
+
+</div>
+
         ); 
     }
     

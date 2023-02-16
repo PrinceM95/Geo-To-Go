@@ -1,9 +1,9 @@
 
 .worldMap {
     width: 40%;
-    margin-left: 75px;
+    margin-left: 575px;
     margin-top: 30px;
-    border: solid 3px #FEBE10;
+    // border: solid 1px #FEBE10;
     background-color: #002D62;
     border-radius: 60%;
     display: left;
@@ -25,4 +25,77 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.prompt{
+    max-width: 500px;
+    height: 125px;
+    border-radius: 40%;
+    // border: solid 3px black;
+    position: absolute;
+    top: 225px;
+    left: 750px;
+}
+
+.prompt{
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 6s;
+    -moz-animation: fadeIn ease 6s;
+    -o-animation: fadeIn ease 6s;
+    -ms-animation: fadeIn ease 6s;
+    -webkit-animation: fadeOut 3000 3s ease-in;
+    -moz-animation: fadeOut 3000 3s ease-in;
+    -o-animation: fadeOut 3000 3s ease-in;
+    animation: fadeOut 3000 3s ease-in;
+    color: goldenrod;
+    font-weight: bold;
+    font-size: 25px
+}
+
+@-webkit-keyframes fadeIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@-moz-keyframes fadeIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@-o-keyframes fadeIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes fadeIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@-webkit-keyframes fadeOut{
+    0%{opacity: 0;}
+    30%{opacity: 1;}
+    80%{opacity: .9;}
+    100%{opacity: 0;}
+}
+
+@-moz-keyframes fadeOut{
+    0%{opacity: 0;}
+    30%{opacity: 1;}
+    80%{opacity: .9;}
+    100%{opacity: 0;}
+}
+
+@-o-keyframes fadeOut{
+    0%{opacity: 0;}
+    30%{opacity: 1;}
+    80%{opacity: .9;}
+    100%{opacity: 0;}
+}
+
+@keyframes fadeOut{
+    0%{opacity: 0;}
+    30%{opacity: 1;}
+    80%{opacity: .9;}
+    100%{opacity: 0;}
 }

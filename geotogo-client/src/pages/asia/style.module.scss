@@ -1,16 +1,13 @@
 .asia {
-    width: 45%;
+    width: 40%;
     margin-left: 75px;
     margin-top: 60px;
     border: solid 3px white;
-    // background-color: #002D62;
     background-image: url("../../assets/asia_red2.gif");
     background-size: 140%;
     background-repeat: no-repeat;
     border-radius: 40%;
     display: left;
-    // border-radius: 40%;
-    // display: left;
 }
 
 .asia path {
@@ -22,4 +19,14 @@
 
 .asia :hover {
     fill: #ACE1AF;
+}
+
+.asf{
+    max-width: 500px;
+    height: 125px;
+    border-radius: 40%;
+    border: solid 3px black;
+    position: absolute;
+    top: 650px;
+    left: 450px;
 }
