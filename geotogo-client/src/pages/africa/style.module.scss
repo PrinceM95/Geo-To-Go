@@ -1,17 +1,46 @@
 .africa {
     width: 45%;
-    margin-right: 400px;
-    // border: solid;
-    // background-color: aqua;
+    margin-left: 75px;
+    margin-top: 100px;
+    border: solid 3px black;
+    background-image: url("../../assets/Savanna.gif");
+    background-size: 140%;
+    background-repeat: no-repeat;
+    border-radius: 40%;
 }
 
 .africa path {
-    fill: #CC1100;
+    fill: #1DB954;
     stroke: black;
-    stroke-width: 2px ;
+    stroke-width: .5px ;
     transition: fill 0.3s;
 }
 
 .africa :hover {
-    fill: #000;
+    fill: #ACE1AF;
+}
+
+.africaDetail{
+    width: 40%;
+    min-height: 300px;
+    padding: 5px;
+    background-color: white;
+    position:absolute;
+    top: 200px;
+    right: 90px;
+    background-color: #CC5500;
+    border-radius: 10%;
+    border: solid 3px black;
+    text-align: center;
+    color: black;
+}
+
+.aff{
+    max-width: 500px;
+    height: 125px;
+    border-radius: 40%;
+    border: solid 3px black;
+    position: absolute;
+    top: 675px;
+    left: 450px;
 }

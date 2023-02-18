@@ -1,17 +1,40 @@
 .asia {
-    width: 60%;
-    margin-right: 400px;
-    // border: solid;
-    // background-color: aqua;
+    width: 40%;
+    margin-left: 75px;
+    margin-top: 60px;
+    border: solid 3px white;
+    background-image: url("../../assets/asia_red2.gif");
+    background-size: 140%;
+    background-repeat: no-repeat;
+    border-radius: 40%;
+    display: left;
 }
 
 .asia path {
-    fill: #CC1100;
-    stroke: black;
-    stroke-width: 2px ;
+    fill: #00573F;
+    stroke: #FEBE10;
+    stroke-width: .5px ;
     transition: fill 0.3s;
 }
 
 .asia :hover {
-    fill: #000;
+    fill: #ACE1AF;
+}
+.asiaDetail{
+    width: 40%;
+    min-height: 300px;
+    padding: 5px;
+    background-color: white;
+    position:absolute;
+    top: 200px;
+    right: 90px;
+}
+.asf{
+    max-width: 500px;
+    height: 125px;
+    border-radius: 40%;
+    border: solid 3px black;
+    position: absolute;
+    top: 650px;
+    left: 450px;
 }
