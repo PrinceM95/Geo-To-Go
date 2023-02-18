@@ -778,7 +778,7 @@ const HomePage = () => {
 	</g>
 </g>
 </svg>
-            {/* <img className={style.continents} src={Map} alt='World Map'></img> */}
+
         </div>
         ); 
     }

@@ -13,7 +13,7 @@ const Header = () => (
             <NavLink to='/na'>NA</NavLink>
             <NavLink to='/oceania'>OC</NavLink>
             <NavLink to='/sa'>SA</NavLink>
-            {/* <NavLink to='/contact'>Contact</NavLink> */}
+            <NavLink to='/contact'>QUIZ</NavLink>
             <NavLink to='/about'>ABOUT</NavLink>
         </ul>
     </div>
