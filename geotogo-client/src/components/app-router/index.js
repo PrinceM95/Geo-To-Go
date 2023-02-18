@@ -18,8 +18,8 @@ const PageSwitch = () => (
         <Route exact path={'/africa'} element={<AfricaPage />} />
         <Route exact path={'/asia'} element={<AsiaPage />} />
         <Route exact path={'/europe'} element={<EuropePage />} />
-        <Route exact path={'/na'} element={<NAPage />} />
-        <Route exact path={'/sa'} element={<SAPage />} />
+        <Route exact path={'/north america'} element={<NAPage />} />
+        <Route exact path={'/south america'} element={<SAPage />} />
         <Route exact path={'/oceania'} element={<OceaniaPage />} />
         <Route exact path={'/contact'} element={<ContactPage />} />
         <Route exact path={'/landing'} element={<LandingPage />} />
