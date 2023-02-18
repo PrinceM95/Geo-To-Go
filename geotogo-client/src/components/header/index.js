@@ -12,8 +12,8 @@ const Header = () => (
             <NavLink to='/europe'>EU</NavLink>
             <NavLink to='/north america'>NA</NavLink>
             <NavLink to='/oceania'>OC</NavLink>
-            <NavLink to='/south america'>SA</NavLink>
-            {/* <NavLink to='/contact'>Contact</NavLink> */}
+            <NavLink to='/sa'>SA</NavLink>
+            <NavLink to='/contact'>QUIZ</NavLink>
             <NavLink to='/about'>ABOUT</NavLink>
         </ul>
     </div>
