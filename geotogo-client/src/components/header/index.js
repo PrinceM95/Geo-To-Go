@@ -10,7 +10,7 @@ const Header = () => (
             <NavLink to='/africa'>AF</NavLink>
             <NavLink to='/asia'>AS</NavLink>
             <NavLink to='/europe'>EU</NavLink>
-            <NavLink to='/na'>NA</NavLink>
+            <NavLink to='/north america'>NA</NavLink>
             <NavLink to='/oceania'>OC</NavLink>
             <NavLink to='/sa'>SA</NavLink>
             <NavLink to='/contact'>QUIZ</NavLink>
