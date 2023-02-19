@@ -4,17 +4,11 @@ import countries from './data';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import { useState } from 'react';
-<<<<<<< HEAD
 // import ocFF from '../../assets/oc_facts.gif';
 
 const OceaniaPage = () => {
     const[data,setData]= useState({})
     const[flag,setFlag]= useState(false)
-=======
-
-const OceaniaPage = () => {
-    const[data,setData]= useState({})
->>>>>>> 01508226f07d52318f3e530f4c8dea2d9cd5cae7
 
     const handleClick = (country) =>{
         let url=`https://restcountries.com/v3.1/name/${country}`

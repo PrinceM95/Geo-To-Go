@@ -79,10 +79,6 @@ const AfricaQPage = () => {
         setFinalResults(false);
     }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 01508226f07d52318f3e530f4c8dea2d9cd5cae7
     return (
         <div className={style.quiz}>
         {/* 1. Header */}
