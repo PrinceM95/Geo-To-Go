@@ -1,0 +1,61 @@
+.africa {
+    width: 45%;
+    margin-left: 75px;
+    margin-top: 90px;
+    border: solid 3px black;
+    background-image: url("../../assets/Savanna.gif");
+    background-size: 140%;
+    background-repeat: no-repeat;
+    border-radius: 40%;
+}
+
+.africa path {
+    fill: #1DB954;
+    stroke: black;
+    stroke-width: .5px ;
+    transition: fill 0.3s;
+    transition: all 1s ease;
+}
+
+.africa :hover {
+    fill: #ACE1AF;
+}
+
+.africaDetail{
+    width: 40%;
+    min-height: 300px;
+    padding: 5px;
+    background-color: white;
+    position:absolute;
+    top: 125px;
+    right: 90px;
+    background-color: #F08000;
+    border-radius: 10%;
+    border: solid 3px black;
+    text-align: center;
+    color: black;
+}
+
+.aff {
+    max-width: 500px;
+    height: 125px;
+    border-radius: 40%;
+    border: solid 3px black;
+    position: absolute;
+    top: 650px;
+    left: 475px;
+}
+
+.quiz {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 585px;
+    left: 1340px;
+    border-radius: 20%;
+    transition: all 1s ease;
+}
+
+.quiz:hover {
+    transform: scale(1.3);
+}

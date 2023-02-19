@@ -1,0 +1,16 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 23px;
+    background: #002D62;
+    // box-shadow: 2px 2px 2px #FEBE10, -2px -2px 2px #FEBE10;
+    color: #FEBE10;
+    height: 3rem;
+    position: fixed;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%
+}

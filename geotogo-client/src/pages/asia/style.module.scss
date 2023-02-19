@@ -1,0 +1,44 @@
+.asia {
+    width: 40%;
+    margin-left: 75px;
+    margin-top: 60px;
+    border: solid 3px black;
+    background-image: url("../../assets/asia_red2.gif");
+    background-size: 140%;
+    background-repeat: no-repeat;
+    border-radius: 40%;
+    display: left;
+}
+
+.asia path {
+    fill: #1DB954;
+    stroke: black;
+    stroke-width: .5px ;
+    transition: fill 0.3s;
+}
+
+.asia :hover {
+    fill: #ACE1AF;
+}
+.asiaDetail{
+    width: 40%;
+    min-height: 300px;
+    padding: 5px;
+    background-color: #F08080;
+    position:absolute;
+    top: 125px;
+    right: 175px;
+    border: solid 3px black;
+    border-radius: 10%;
+    text-align: center;
+}
+
+.asf{
+    max-width: 500px;
+    height: 125px;
+    border-radius: 40%;
+    border: solid 3px black;
+    position: absolute;
+    top: 650px;
+    left: 450px;
+}
