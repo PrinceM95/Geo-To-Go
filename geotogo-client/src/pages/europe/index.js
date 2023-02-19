@@ -2,7 +2,7 @@ import 'tippy.js/dist/tippy.css';
 import React from 'react';
 import Tippy from '@tippyjs/react';
 import countries from './data';
-import euFF from '../../assets/africa_fact_fun.gif';
+import euFF from '../../assets/eu_facts.gif';
 import style from './style.module.scss';
 import { useState } from 'react';
 
@@ -41,12 +41,12 @@ const EuropePage = () => {
                 <h1>{data?.name?.common}</h1>
                 <h3>Capital: {data?.capital}</h3>
                 <h3>Languages: {data?.languages?.ara}</h3>
-                <img src={data?.flags?.png} alt="flag pic"></img>
+                {flag &&<img src={data?.flags?.png} alt="flag pic"></img>}
             </div>
 
-            {/* <div className={style.africaFacts}>
-                <img src={africaFF} className={style.euf} alt="logo"></img>
-            </div>  */}
+            <div className={style.euFacts}>
+                <img src={euFF} className={style.euf} alt="logo"></img>
+            </div> 
         </div>
         ); 
     }

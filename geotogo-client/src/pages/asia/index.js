@@ -4,7 +4,7 @@ import countries from './data';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import { useState } from 'react';
-import asiaFF from '../../assets/africa_fact_fun.gif';
+import asiaFF from '../../assets/asia_facts.gif';
 
 const AsiaPage = () => {
 	const [data, setData] = useState({})
@@ -24,6 +24,7 @@ const AsiaPage = () => {
 				console.log(error)
 			})
 	}
+
 	return (
 		<div className={style.asia}>
 
@@ -41,9 +42,10 @@ const AsiaPage = () => {
 				<h3>Languages: {data?.languages?.ara}</h3>
 				{flag &&<img src={data?.flags?.png} alt="flag pic"></img>}
 			</div>
+			
 			<div className={style.asiaFacts}>
-    	<img src={asiaFF} className={style.asf} alt="logo"></img>
-    </div>
+    			<img src={asiaFF} className={style.asf} alt="logo"></img>
+    		</div>
 
 		</div>
 	);

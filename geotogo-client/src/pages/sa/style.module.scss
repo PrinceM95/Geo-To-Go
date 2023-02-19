@@ -1,8 +1,8 @@
 .sa {
-    width: 45%;
+    width: 48%;
     margin-left: 75px;
     margin-top: 50px;
-    border: solid 3px #4CBB17;
+    border: solid 3px #009000;
     background-image: url("../../assets/sa.gif");
     background-size: 140%;
     background-repeat: no-repeat;
@@ -12,7 +12,7 @@
 
 
 .sa path {
-    fill: #4CBB17;
+    fill: #8cc751;
     stroke: black;
     stroke-width: .5px ;
     transition: fill 0.3s;
@@ -25,10 +25,10 @@
 .saf{
     max-width: 500px;
     height: 125px;
-    border-radius: 40%;
+    border-radius: 30%;
     border: solid 3px black;
     position: absolute;
-    top: 645px;
+    top: 695px;
     left: 550px;
 }
 .sADetail{
@@ -39,7 +39,7 @@
     position:absolute;
     top: 200px;
     right: 90px;
-    background-color: #CC5500;
+    background-color: #8cc751;
     border-radius: 10%;
     border: solid 3px black;
     text-align: center;

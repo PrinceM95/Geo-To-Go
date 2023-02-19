@@ -4,7 +4,8 @@ import countries from './data';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import { useState } from 'react';
-import africaFF from '../../assets/africa_fact_fun.gif';
+import africaFF from '../../assets/africa_facts.gif';
+import quiz from '../../assets/quiz.png';
 
 
 const AfricaPage = () => {
@@ -36,6 +37,7 @@ const AfricaPage = () => {
                     </Tippy> )
                 })}
             </svg>
+            
             <div className={style.africaDetail}>
                 <h1>{data?.name?.common}</h1>
                 <h3>Capital: {data?.capital}</h3>
@@ -46,7 +48,14 @@ const AfricaPage = () => {
                 <img src={africaFF} className={style.aff} alt="logo"></img>
             </div>
 
+            <div className={style.quizLogo}>
+            <a href="/africa_quiz" target="_blank" rel="noreferrer">
+                <img src={quiz} className={style.quiz} alt="africa_quiz"></img>
+            </a>
         </div>
+
+
+    </div>
     );
 }
 

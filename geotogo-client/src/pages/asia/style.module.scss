@@ -2,7 +2,7 @@
     width: 40%;
     margin-left: 75px;
     margin-top: 60px;
-    border: solid 3px white;
+    border: solid 3px black;
     background-image: url("../../assets/asia_red2.gif");
     background-size: 140%;
     background-repeat: no-repeat;
@@ -11,9 +11,9 @@
 }
 
 .asia path {
-    fill: #00573F;
+    fill: #1DB954;
     stroke: black;
-    stroke-width: .8px ;
+    stroke-width: .5px ;
     transition: fill 0.3s;
 }
 
@@ -24,11 +24,15 @@
     width: 40%;
     min-height: 300px;
     padding: 5px;
-    background-color: white;
+    background-color: #F08080;
     position:absolute;
-    top: 200px;
-    right: 90px;
+    top: 125px;
+    right: 175px;
+    border: solid 3px black;
+    border-radius: 10%;
+    text-align: center;
 }
+
 .asf{
     max-width: 500px;
     height: 125px;
