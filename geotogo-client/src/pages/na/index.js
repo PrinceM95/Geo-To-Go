@@ -6,7 +6,6 @@ import 'tippy.js/dist/tippy.css';
 import { useState } from 'react';
 
 const NAPage = () => {
-
     const[data,setData]= useState({})
     const[flag,setFlag]= useState(false)
 
@@ -47,6 +46,7 @@ var requestOptions = {
                 <img src={africaFF} className={style.aff} alt="logo"></img> 
             </div>*/}
         </div>
+        
         ); 
     }
     

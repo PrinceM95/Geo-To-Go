@@ -4,7 +4,7 @@ import React from 'react';
 import Tippy from '@tippyjs/react';
 import countries from './data';
 import style from './style.module.scss';
-import saFF from '../../assets/africa_fact_fun.gif';
+import saFF from '../../assets/sa_facts.gif';
 
 const SAPage = () => {
     const[data,setData]= useState({})
@@ -40,12 +40,12 @@ const SAPage = () => {
                 <h1>{data?.name?.common}</h1>
                 <h3>Capital: {data?.capital}</h3>
                 <h3>Languages: {data?.languages?.ara}</h3>
-                <img src={data?.flags?.png} alt="flag pic"></img>
+                {flag &&<img src={data?.flags?.png} alt="flag pic"></img>}
             </div>
 
-            {/* <div className={style.africaFacts}>
-                <img src={africaFF} className={style.euf} alt="logo"></img>
-            </div>  */}
+            <div className={style.saFacts}>
+                <img src={saFF} className={style.saf} alt="logo"></img>
+            </div> 
         </div>
     );
 }

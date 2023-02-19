@@ -20,12 +20,12 @@ const AfricaQPage = () => {
           ],
         },
         {
-          text: "What year was the Constitution of America written?",
+          text: "What is the capital of Congo?",
           options: [
-            { id: 0, text: "1787", isCorrect: true },
-            { id: 1, text: "1776", isCorrect: false },
-            { id: 2, text: "1774", isCorrect: false },
-            { id: 3, text: "1826", isCorrect: false },
+            { id: 0, text: "Brazzaville", isCorrect: true },
+            { id: 1, text: "Kinshasa", isCorrect: false },
+            { id: 2, text: "Pretoria", isCorrect: false },
+            { id: 3, text: "I don't know, laisse moi", isCorrect: false },
           ],
         },
         {
@@ -78,7 +78,6 @@ const AfricaQPage = () => {
         setCurrentQuestion(0);
         setFinalResults(false);
     }
-
 
     return (
         <div className={style.quiz}>
