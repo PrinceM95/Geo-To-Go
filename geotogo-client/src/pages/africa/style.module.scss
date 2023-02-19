@@ -1,7 +1,11 @@
 .africa {
     width: 45%;
     margin-left: 75px;
+<<<<<<< HEAD
     margin-top: 90px;
+=======
+    margin-top: 100px;
+>>>>>>> 01508226f07d52318f3e530f4c8dea2d9cd5cae7
     border: solid 3px black;
     background-image: url("../../assets/Savanna.gif");
     background-size: 140%;
@@ -14,7 +18,10 @@
     stroke: black;
     stroke-width: .5px ;
     transition: fill 0.3s;
+<<<<<<< HEAD
     transition: all 1s ease;
+=======
+>>>>>>> 01508226f07d52318f3e530f4c8dea2d9cd5cae7
 }
 
 .africa :hover {
@@ -27,21 +34,32 @@
     padding: 5px;
     background-color: white;
     position:absolute;
+<<<<<<< HEAD
     top: 125px;
     right: 90px;
     background-color: #F08000;
+=======
+    top: 200px;
+    right: 90px;
+    background-color: #CC5500;
+>>>>>>> 01508226f07d52318f3e530f4c8dea2d9cd5cae7
     border-radius: 10%;
     border: solid 3px black;
     text-align: center;
     color: black;
 }
 
+<<<<<<< HEAD
 .aff {
+=======
+.aff{
+>>>>>>> 01508226f07d52318f3e530f4c8dea2d9cd5cae7
     max-width: 500px;
     height: 125px;
     border-radius: 40%;
     border: solid 3px black;
     position: absolute;
+<<<<<<< HEAD
     top: 650px;
     left: 475px;
 }
@@ -59,3 +77,8 @@
 .quiz:hover {
     transform: scale(1.3);
 }
+=======
+    top: 675px;
+    left: 450px;
+}
+>>>>>>> 01508226f07d52318f3e530f4c8dea2d9cd5cae7

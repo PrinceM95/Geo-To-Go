@@ -4,14 +4,11 @@ import countries from './data';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import { useState } from 'react';
-import asiaFF from '../../assets/asia_facts.gif';
-
+import asiaFF from '../../assets/africa_fact_fun.gif';
 const AsiaPage = () => {
-	const[data,setData]= useState({})
-    const[flag,setFlag]= useState(false)
+	const [data, setData] = useState({})
 
 	const handleClick = (country) => {
-		setFlag(true)
 		let url = `https://restcountries.com/v3.1/name/${country}`
 		fetch(url)
 			.then((response) => response.json())
@@ -29,10 +26,11 @@ const AsiaPage = () => {
 
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
 				{countries.map((country, idx) => {
-							return (
-							<Tippy content={country.name} key = {idx}>
+							return <>
+								<Tippy content={country.name}>
 									<path d={country.d} onClick= {()=> handleClick(country.name)} />
-								</Tippy> )
+								</Tippy>
+							</>
 						})}
 				</svg>	
 			<div className={style.asiaDetail}>
