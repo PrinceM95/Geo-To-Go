@@ -1,12 +1,30 @@
 import 'tippy.js/dist/tippy.css';
-
 import React from 'react';
 import Tippy from '@tippyjs/react';
 import countries from './data';
-import euFF from '../../assets/africa_fact_fun.gif';
+import euFF from '../../assets/eu_facts.gif';
 import style from './style.module.scss';
+import { useState } from 'react';
+
 
 const EuropePage = () => {
+    const[data,setData]= useState({})
+    const[flag,setFlag]= useState(false)
+
+    const handleClick = (country) =>{
+        setFlag(true)
+        let url=`https://restcountries.com/v3.1/name/${country}`
+        fetch(url)
+        .then((response)=> response.json())
+        .then((data)=> {
+            console.log(data[0])
+            setData(data[0])
+            
+        })
+        .catch((error)=>{
+            console.log(error)
+        })
+    }
 
     return (
         <div className={style.europe}>

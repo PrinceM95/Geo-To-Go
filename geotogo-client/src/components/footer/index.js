@@ -3,7 +3,6 @@ import style from './style.module.scss';
 
 const Footer = () => (
     <div className={style.footer}>
-<<<<<<< HEAD
         <div>
             <h3>Contact Us</h3>  
         </div>
@@ -18,9 +17,6 @@ const Footer = () => (
             </ul>  
         </div>
 
-=======
-        <div>&copy; Geo-To-Go 2023</div>
->>>>>>> 01508226f07d52318f3e530f4c8dea2d9cd5cae7
     </div>
 );
     
