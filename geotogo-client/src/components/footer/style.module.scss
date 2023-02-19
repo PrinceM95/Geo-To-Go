@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Gentium+Book+Plus&family=Zilla+Slab:wght@300&display=swap');
+
 .footer{
     display: flex;
     justify-content: center;
@@ -12,5 +14,13 @@
     left: 0;
     bottom: 0;
     right: 0;
-    width: 100%
+    width: 100%;
+    padding-bottom: 50px;
+    
+}
+
+.socialList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
