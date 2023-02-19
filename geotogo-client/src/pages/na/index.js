@@ -4,11 +4,10 @@ import countries from './data';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import { useState } from 'react';
-// import naFF from '../../assets/na_facts.gif';
 
 const NAPage = () => {
-    // const[data,setData]= useState({})
-    // const[flag,setFlag]= useState(false)
+    const[data,setData]= useState({})
+    const[flag,setFlag]= useState(false)
 
     const handleClick = (state) =>{
         var headers = new Headers();
@@ -37,17 +36,15 @@ var requestOptions = {
                     </> 
                 })}
             </svg>
-
-            {/* <div className={style.naFacts}>
-                <img src={naFF} className={style.naf} alt="logo"></img>
-            </div>  */}
-
-            {/* <div className={style.stateDetail}>
+            <div className={style.stateDetail}>
                 <h1>{data?.name?.common}</h1>
-                <h3>Capitaly: {data?.capital}</h3>
+                <h3>Capital: {data?.capital}</h3>
                 <h3>Languages: {data?.languages?.ara}</h3>
                 {flag &&<img src={data?.flags?.png} alt="flag pic"></img>}
-            </div> */}
+            </div>
+            {/* <div className={style.africaFacts}>
+                <img src={africaFF} className={style.aff} alt="logo"></img> 
+            </div>*/}
         </div>
         
         ); 

@@ -5,9 +5,10 @@ import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import { useState } from 'react';
 import asiaFF from '../../assets/asia_facts.gif';
+
 const AsiaPage = () => {
 	const [data, setData] = useState({})
-	const [flag, setFlag] = useState(false)
+	const[flag,setFlag]= useState(false)
 
 	const handleClick = (country) => {
 		setFlag(true)
@@ -29,11 +30,10 @@ const AsiaPage = () => {
 
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
 				{countries.map((country, idx) => {
-							return <>
+							return (
 								<Tippy content={country.name}>
 									<path d={country.d} onClick= {()=> handleClick(country.name)} />
-								</Tippy>
-							</>
+								</Tippy> )
 						})}
 				</svg>	
 			<div className={style.asiaDetail}>

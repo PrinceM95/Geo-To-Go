@@ -10,21 +10,21 @@ const HomePage = () => {
 
     return (
         <div className={style.worldMap}>
-		<div className={style.backgroundHome}></div>
-		{/* <div className={style.prompt}>Click on a continent to begin exploring!</div> */}
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">
-{continents.map((continents, idx) => {
-                    return <>
-                    <Tippy content={continents.name}>
-					<a href={continents.name}>
-                    <path d={continents.d} fill={continents.fill} stroke={continents.stroke} />
-					</a>
-                    </Tippy>
-                    </> 
+            <div className={style.asia_cont}></div>
+            <div className={style.prompt}>Click on a continent to begin exploring!</div>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">
+                {continents.map((continents, idx) => {
+                    return (
+                        <Tippy content={continents.name} key = {idx}>
+                            <a href={continents.name}>
+                                <path d={continents.d} fill={continents.fill} stroke={continents.stroke} />
+                            </a>
+                        </Tippy> )
                 })}
-</svg>
+            </svg>
+
         </div>
-        ); 
-    }
-    
-    export default HomePage;
+    );
+}
+
+export default HomePage;

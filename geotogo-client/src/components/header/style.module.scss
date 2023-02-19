@@ -29,8 +29,8 @@ body {
 
     & a {
         align-items: center;
-        border: 1px solid black;
-        border-radius: 6px;
+        // border: 1px solid black;
+        // border-radius: 6px;
         display: flex;
         justify-content: center;
         list-style-type: none;
@@ -38,8 +38,7 @@ body {
         min-width: 75px;
         padding: 6px;
         text-decoration: none;
-        // background-image: url("../../assets/quiz.png");
-        background-color: #ACE1AF;
+        // background-color: #ACE1AF;
         font-family: 'Zilla Slab', serif;
         font-size: large;
         font-style: bold;
@@ -47,7 +46,9 @@ body {
     }
 
     & a:hover {
-        background-color: #FEBE10;
+    //     background-color: #FEBE10;
         transition: .5s;
+        transform: scale(1.2);
+        
     }
 }
