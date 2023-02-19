@@ -14,8 +14,9 @@ const Footer = () => (
                 <li><a href="https://github.com/2022-October-Java-PT/digi-dreamers-mystery-educator-repo" target="_blank" rel="noopener noreferrer">GitHub</a></li>
                 <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
                 <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-    </ul>  
+            </ul>  
         </div>
+
     </div>
 );
     

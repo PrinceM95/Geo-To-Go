@@ -1,0 +1,49 @@
+.europe {
+    width: 45%;
+    margin-left: 75px;
+    margin-top: 70px;
+    border: solid 3px #002D62;
+     // background-color: #002D62;
+    background-image: url("../../assets/eu.gif");
+    background-size: 210%;
+    background-repeat: no-repeat;
+    border-radius: 40%;
+    display: left;
+     // border-radius: 40%;
+     // display: left;
+}
+
+.europe path {
+    fill: #006400;
+    stroke: black;
+    stroke-width: 1px ;
+    transition: fill 0.3s;
+}
+
+.europe :hover {
+    fill: #ACE1AF;
+}
+
+.euf{
+    max-width: 500px;
+    height: 125px;
+    border-radius: 40%;
+    border: solid 3px black;
+    position: absolute;
+    top: 125px;
+    left: 650px;
+}
+.europeDetail{
+    width: 40%;
+    min-height: 300px;
+    padding: 5px;
+    background-color: white;
+    position:absolute;
+    top: 200px;
+    right: 90px;
+    background-color: #CC5500;
+    border-radius: 10%;
+    border: solid 3px black;
+    text-align: center;
+    color: black;
+}

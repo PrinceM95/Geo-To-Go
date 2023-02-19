@@ -1,15 +1,17 @@
 import { Route, Routes } from 'react-router-dom';
 
+import AboutPage from '../../pages/about';
+import AfricaPage from '../../pages/africa';
+import AfricaQPage from '../../pages/africa_quiz';
+import AsiaPage from '../../pages/asia';
+// import ContactPage from '../../pages/contact';
+import EuropePage from '../../pages/europe';
 // import LandingPage from '../../pages/landing';
 import HomePage from '../../pages/home';
-import AfricaPage from '../../pages/africa';
-import AsiaPage from '../../pages/asia';
-import EuropePage from '../../pages/europe';
 import NAPage from '../../pages/na';
-import SAPage from '../../pages/sa';
 import OceaniaPage from '../../pages/oceania';
-import ContactPage from '../../pages/contact';
 import React from 'react';
+import SAPage from '../../pages/sa';
 
 const PageSwitch = () => (
     <Routes>
@@ -18,10 +20,13 @@ const PageSwitch = () => (
         <Route exact path={'/africa'} element={<AfricaPage />} />
         <Route exact path={'/asia'} element={<AsiaPage />} />
         <Route exact path={'/europe'} element={<EuropePage />} />
-        <Route exact path={'/na'} element={<NAPage />} />
-        <Route exact path={'/sa'} element={<SAPage />} />
+        <Route exact path={'/north america'} element={<NAPage />} />
+        <Route exact path={'/south america'} element={<SAPage />} />
         <Route exact path={'/oceania'} element={<OceaniaPage />} />
-        <Route exact path={'/contact'} element={<ContactPage />} />
+        {/* <Route exact path={'/contact'} element={<ContactPage />} /> */}
+        <Route exact path={'/about'} element={<AboutPage />} />
+        <Route exact path={'/africa_quiz'} element={<AfricaQPage />} />
+        {/* <Route exact path={'/landing'} element={<LandingPage />} /> */}
     </Routes>
 );
 

@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Gentium+Book+Plus&family=Zilla+Slab:wght@300&display=swap');
+
+body {
+    font-family: 'Zilla Slab', serif;
+}
+
 .header{
     display: flex;
     justify-content: center;
@@ -6,11 +12,10 @@
     background-color: black;
     height: 4rem;
     color: white;
-    background: #14558f;
-    box-shadow: 2px 2px 4px #4FFFB0, -2px -2px 4px #4FFFB0;
+    background: #002D62;
 
     & h1{
-        color: #4FFFB0;
+        color: #FEBE10;
         margin-left: 11rem;
         align-items: center;
         border-radius: 6px;
@@ -33,11 +38,15 @@
         min-width: 75px;
         padding: 6px;
         text-decoration: none;
-        background-color: #4FFFB0;
+        background-color: #ACE1AF;
+        font-family: 'Zilla Slab', serif;
+        font-size: large;
+        font-style: bold;
+        font-size: x-large;
     }
 
     & a:hover {
-        background-color: lightblue;
+        background-color: #FEBE10;
         transition: .5s;
     }
 }
