@@ -4,7 +4,7 @@ import AboutPage from '../../pages/about';
 import AfricaPage from '../../pages/africa';
 import AfricaQPage from '../../pages/africa_quiz';
 import AsiaPage from '../../pages/asia';
-// import ContactPage from '../../pages/contact';
+import QuizPage from '../../pages/quiz';
 import EuropePage from '../../pages/europe';
 // import LandingPage from '../../pages/landing';
 import HomePage from '../../pages/home';
@@ -23,7 +23,7 @@ const PageSwitch = () => (
         <Route exact path={'/north america'} element={<NAPage />} />
         <Route exact path={'/south america'} element={<SAPage />} />
         <Route exact path={'/oceania'} element={<OceaniaPage />} />
-        {/* <Route exact path={'/contact'} element={<ContactPage />} /> */}
+        <Route exact path={'/quiz'} element={<QuizPage />} />
         <Route exact path={'/about'} element={<AboutPage />} />
         <Route exact path={'/africa_quiz'} element={<AfricaQPage />} />
         {/* <Route exact path={'/landing'} element={<LandingPage />} /> */}
