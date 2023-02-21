@@ -4,7 +4,7 @@ import countries from './data';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import { useState } from 'react';
-import africaFF from '../../assets/africa_fact_fun.gif';
+// import africaFF from '../../assets/africa_fact_fun.gif';
 
 
 const NAPage = () => {
@@ -32,7 +32,7 @@ const NAPage = () => {
                 {countries.map((country, idx) => {
                     return (
                     <Tippy content={country.name} key = {idx}>
-                    <path d={country.d} fill={country.fill} stroke={country.stroke} onClick= {()=> handleClick(country.name)} />
+                    <path d={country.d} onClick= {()=> handleClick(country.name)} />
                     </Tippy> )
                 })}
             </svg>
