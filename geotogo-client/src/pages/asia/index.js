@@ -5,6 +5,7 @@ import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import { useState } from 'react';
 import asiaFF from '../../assets/asia_facts.gif';
+import quiz from '../../assets/quiz.png';
 
 const AsiaPage = () => {
 	const [data, setData] = useState({})
@@ -46,6 +47,12 @@ const AsiaPage = () => {
 			<div className={style.asiaFacts}>
     			<img src={asiaFF} className={style.asf} alt="logo"></img>
     		</div>
+
+			<div className={style.quizLogo}>
+            <a href="/africa_quiz" target="_blank" rel="noreferrer">
+                <img src={quiz} className={style.quiz} alt="africa_quiz"></img>
+            </a>
+        </div>
 
 		</div>
 	);

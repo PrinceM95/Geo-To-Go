@@ -5,12 +5,14 @@ import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import { useState } from 'react';
 // import ocFF from '../../assets/oc_facts.gif';
+import quiz from '../../assets/quiz.png';
 
 const OceaniaPage = () => {
     const[data,setData]= useState({})
     const[flag,setFlag]= useState(false)
 
     const handleClick = (country) =>{
+        setFlag(true)
         let url=`https://restcountries.com/v3.1/name/${country}`
         fetch(url)
         .then((response)=> response.json())
@@ -47,6 +49,12 @@ const OceaniaPage = () => {
             {/* <div className={style.ocFacts}>
                 <img src={ocFF} className={style.ocf} alt="logo"></img>
             </div>  */}
+
+            <div className={style.quizLogo}>
+            <a href="/africa_quiz" target="_blank" rel="noreferrer">
+                <img src={quiz} className={style.quiz} alt="africa_quiz"></img>
+            </a>
+        </div>
 
         </div>
     );

@@ -1,8 +1,9 @@
 .na {
-    width: 45%;
+    width: 40%;
+    height: 20%;
     margin-left: 75px;
-    margin-top: 20px;
-    border: solid 3px #DADD98;
+    margin-top: 50px;
+    border: solid 3px black;
     background-image: url("../../assets/na.gif");
     background-size: 210%;
     background-repeat: no-repeat;
@@ -26,11 +27,25 @@
     padding: 5px;
     background-color: white;
     position:absolute;
-    top: 200px;
-    right: 90px;
-    background-color: #CC5500;
+    top: 150px;
+    right: 150px;
+    background-color: #F8DE7E;
     border-radius: 10%;
     border: solid 3px rgb(9, 8, 8);
     text-align: center;
     color: rgb(2, 2, 2);
+}
+
+.quiz {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 585px;
+    left: 1275px;
+    border-radius: 20%;
+    transition: all 1s ease;
+}
+
+.quiz:hover {
+    transform: scale(1.3);
 }

@@ -2,7 +2,7 @@
     width: 48%;
     margin-left: 75px;
     margin-top: 50px;
-    border: solid 3px #009000;
+    border: solid 3px black;
     background-image: url("../../assets/sa.gif");
     background-size: 140%;
     background-repeat: no-repeat;
@@ -25,7 +25,7 @@
 .saf{
     max-width: 500px;
     height: 125px;
-    border-radius: 30%;
+    border-radius: 40%;
     border: solid 3px black;
     position: absolute;
     top: 695px;
@@ -37,11 +37,25 @@
     padding: 5px;
     background-color: white;
     position:absolute;
-    top: 200px;
-    right: 90px;
+    top: 115px;
+    right: 50px;
     background-color: #8cc751;
     border-radius: 10%;
     border: solid 3px black;
     text-align: center;
     color: black;
+}
+
+.quiz {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 560px;
+    left: 1400px;
+    border-radius: 20%;
+    transition: all 1s ease;
+}
+
+.quiz:hover {
+    transform: scale(1.3);
 }

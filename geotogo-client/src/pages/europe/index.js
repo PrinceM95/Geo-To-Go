@@ -5,6 +5,7 @@ import countries from './data';
 import euFF from '../../assets/eu_facts.gif';
 import style from './style.module.scss';
 import { useState } from 'react';
+import quiz from '../../assets/quiz.png';
 
 
 const EuropePage = () => {
@@ -28,7 +29,7 @@ const EuropePage = () => {
 
     return (
         <div className={style.europe}>
-        <svg version="1.2" viewBox="0 0 1000 684"  xmlns="http://www.w3.org/2000/svg">
+        <svg width="700" height="625"version="1.2" viewBox="0 0 1000 684"  xmlns="http://www.w3.org/2000/svg">
         {countries.map((country, idx) => {
                     return (
                     <Tippy content={country.name} key = {idx}>
@@ -47,6 +48,13 @@ const EuropePage = () => {
             <div className={style.euFacts}>
                 <img src={euFF} className={style.euf} alt="logo"></img>
             </div> 
+
+        <div className={style.quizLogo}>
+            <a href="/africa_quiz" target="_blank" rel="noreferrer">
+                <img src={quiz} className={style.quiz} alt="africa_quiz"></img>
+            </a>
+        </div>
+
         </div>
         ); 
     }

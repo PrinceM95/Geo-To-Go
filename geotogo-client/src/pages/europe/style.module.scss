@@ -1,7 +1,7 @@
 .europe {
     width: 45%;
     margin-left: 35px;
-    margin-top: 80px;
+    margin-top: 50px;
     border: solid 3px black;
     background-image: url("../../assets/eu.gif");
     background-size: 210%;
@@ -27,8 +27,8 @@
     border-radius: 40%;
     border: solid 3px black;
     position: absolute;
-    top: 155px;
-    left: 665px;
+    top: 635px;
+    left: 635px;
 }
 
 .europeDetail{
@@ -37,11 +37,25 @@
     padding: 5px;
     background-color: white;
     position:absolute;
-    top: 375px;
-    right: 60px;
+    top: 90px;
+    right: 90px;
     background-color: #73C2FB;
     border-radius: 10%;
     border: solid 3px black;
     text-align: center;
     color: black;
+}
+
+.quiz {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 625px;
+    left: 1340px;
+    border-radius: 20%;
+    transition: all 1s ease;
+}
+
+.quiz:hover {
+    transform: scale(1.3);
 }
