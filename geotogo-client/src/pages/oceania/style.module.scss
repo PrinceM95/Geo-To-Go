@@ -2,7 +2,7 @@
     width: 45%;
     margin-left: 75px;
     margin-top: 80px;
-    border: solid 3px #ACE1AF;
+    border: solid 3px black;
     background-image: url("../../assets/oceania2.gif");
     background-size: 140%;
     background-repeat: no-repeat;
@@ -24,11 +24,13 @@
     width: 40%;
     min-height: 300px;
     padding: 5px;
-    background-color: white;
     border-radius: 10%;
     position:absolute;
-    top: 200px;
+    top: 125px;
     right: 90px;
+    text-align: center;
+    background-color: goldenrod;
+    border: solid 3px black;
 }
 
 .saf{
@@ -39,4 +41,18 @@
     position: absolute;
     top: 645px;
     left: 550px;
+}
+
+.quiz {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 585px;
+    left: 1340px;
+    border-radius: 20%;
+    transition: all 1s ease;
+}
+
+.quiz:hover {
+    transform: scale(1.3);
 }

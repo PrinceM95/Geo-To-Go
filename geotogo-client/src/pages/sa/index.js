@@ -5,6 +5,7 @@ import Tippy from '@tippyjs/react';
 import countries from './data';
 import style from './style.module.scss';
 import saFF from '../../assets/sa_facts.gif';
+import quiz from '../../assets/quiz.png';
 
 const SAPage = () => {
     const[data,setData]= useState({})
@@ -45,7 +46,14 @@ const SAPage = () => {
 
             <div className={style.saFacts}>
                 <img src={saFF} className={style.saf} alt="logo"></img>
-            </div> 
+            </div>
+
+            <div className={style.quizLogo}>
+            <a href="/africa_quiz" target="_blank" rel="noreferrer">
+                <img src={quiz} className={style.quiz} alt="africa_quiz"></img>
+            </a>
+        </div>
+
         </div>
     );
 }
