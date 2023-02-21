@@ -33,7 +33,7 @@ const NAPage = () => {
                 {countries.map((country, idx) => {
                     return (
                     <Tippy content={country.name} key = {idx}>
-                    <path d={country.d} fill={country.fill} stroke={country.stroke} onClick= {()=> handleClick(country.name)} />
+                    <path d={country.d} onClick= {()=> handleClick(country.name)} />
                     </Tippy> )
                 })}
             </svg>
