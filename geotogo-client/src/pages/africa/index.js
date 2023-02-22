@@ -31,7 +31,7 @@ const AfricaPage = () => {
 
     return (
         <div className={style.africa}>
-            <svg width="504" height="565" viewBox="0 0 504 565" xmlns="http://www.w3.org/2000/svg">
+            <svg width="475" height="565" viewBox="0 0 504 565" xmlns="http://www.w3.org/2000/svg">
                 {countries.map((country, idx) => {
                     return (
                     <Tippy className={style.tippy} content={country.name} key = {idx}>
@@ -51,6 +51,10 @@ const AfricaPage = () => {
             </div>
             <div className={style.africaFacts}>
                 <img src={africaFF} className={style.aff} alt="logo"></img>
+            </div>
+
+            <div className={style.name}>
+            <h1>Africa</h1>
             </div>
 
             <div className={style.quizLogo}>

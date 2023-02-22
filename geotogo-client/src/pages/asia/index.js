@@ -29,7 +29,7 @@ const AsiaPage = () => {
 	return (
 		<div className={style.asia}>
 
-			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+			<svg width="700" height="625" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
 				{countries.map((country, idx) => {
 							return (
 								<Tippy content={country.name}>
@@ -43,6 +43,11 @@ const AsiaPage = () => {
 				<h3>Languages: {data?.languages?.ara}</h3>
 				{flag &&<img src={data?.flags?.png} alt="flag pic"></img>}
 			</div>
+
+			
+            <div className={style.name}>
+            <h1>Asia</h1>
+            </div>
 			
 			<div className={style.asiaFacts}>
     			<img src={asiaFF} className={style.asf} alt="logo"></img>

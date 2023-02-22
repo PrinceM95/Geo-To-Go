@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Delius&family=Gentium+Book+Plus&family=M+PLUS+1p:wght@300&family=Phudu&family=Quicksand:wght@300;400&family=Zilla+Slab:wght@300&display=swap');
+
 .asia {
-    width: 40%;
+    width: 45%;
     margin-left: 75px;
     margin-top: 60px;
     border: solid 3px black;
     background-image: url("../../assets/asia_red2.gif");
-    background-size: 140%;
+    background-size: 160%;
     background-repeat: no-repeat;
     border-radius: 40%;
     display: left;
@@ -55,4 +57,20 @@
 
 .quiz:hover {
     transform: scale(1.3);
+}
+
+.name {
+    width: 125px;
+    height: 50px;
+    position: absolute;
+    top: 200px;
+    left: 675px;
+    border: solid 1px black;
+    border-radius: 30%;
+    transition: all 1s ease;
+    font-size: medium;
+    color: #301934;
+    background-color: 	#CD5C5C;
+    text-align: center;
+    font-family: 'M PLUS 1p', sans-serif;
 }
