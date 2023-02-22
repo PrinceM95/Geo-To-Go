@@ -1,29 +1,32 @@
 import React from 'react';
 import style from './style.module.scss';
-import countries from './data';
+import {countries,getCountryByName} from './data';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import { useState } from 'react';
 import asiaFF from '../../assets/asia_facts.gif';
 import quiz from '../../assets/quiz.png';
 
+
 const AsiaPage = () => {
 	const [data, setData] = useState({})
 	const[flag,setFlag]= useState(false)
 
-	const handleClick = (country) => {
-		setFlag(true)
-		let url = `https://restcountries.com/v3.1/name/${country}`
-		fetch(url)
-			.then((response) => response.json())
-			.then((data) => {
-				console.log(data[0])
-				setData(data[0])
-
-			})
-			.catch((error) => {
-				console.log(error)
-			})
+	const handleClick = (country) =>{
+        setFlag(true)
+        let url=`https://restcountries.com/v3.1/name/${country}`
+        fetch(url)
+        .then((response)=> response.json())
+        .then((data)=> {
+            console.log(data[0])
+            
+            let description=getCountryByName(country).description
+            data[0].description=description
+            setData(data[0])
+        })
+        .catch((error)=>{
+            console.log(error)
+        })
 	}
 
 	return (
@@ -38,10 +41,13 @@ const AsiaPage = () => {
 						})}
 				</svg>	
 			<div className={style.asiaDetail}>
-				<h1>{data?.name?.common}</h1>
-				<h3>Capital: {data?.capital}</h3>
-				<h3>Languages: {data?.languages?.ara}</h3>
-				{flag &&<img src={data?.flags?.png} alt="flag pic"></img>}
+			<h1>{data?.name?.common}</h1>
+                <h3>Capital: {data?.capital}</h3>
+                <h3>Languages: {data?.languages && Object.values(data?.languages).map((l)=>{
+                    return <span key={l}>{l}, </span>
+                }) }</h3>
+                {flag &&<img src={data?.flags?.png} alt="flag pic"></img>}
+                <p>{data?.description}</p>
 			</div>
 
 			

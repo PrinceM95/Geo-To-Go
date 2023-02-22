@@ -42,12 +42,12 @@ const AfricaPage = () => {
             
             <div className={style.africaDetail}>
                 <h1>{data?.name?.common}</h1>
-                <p>{data?.description}</p>
                 <h3>Capital: {data?.capital}</h3>
                 <h3>Languages: {data?.languages && Object.values(data?.languages).map((l)=>{
                     return <span key={l}>{l}, </span>
                 }) }</h3>
                 {flag &&<img src={data?.flags?.png} alt="flag pic"></img>}
+                <p>{data?.description}</p>
             </div>
             <div className={style.africaFacts}>
                 <img src={africaFF} className={style.aff} alt="logo"></img>
