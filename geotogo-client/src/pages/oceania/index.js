@@ -59,7 +59,11 @@ const OceaniaPage = () => {
             <a href="/africa_quiz" target="_blank" rel="noreferrer">
                 <img src={quiz} className={style.quiz} alt="africa_quiz"></img>
             </a>
-        </div>
+            </div>
+
+            <div className={style.name}>
+            <h1>Oceania</h1>
+            </div>
 
         </div>
     );

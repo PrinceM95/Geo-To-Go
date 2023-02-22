@@ -49,6 +49,10 @@ const NAPage = () => {
                 <p>{data?.description}</p>
             </div>
 
+            <div className={style.name}>
+            <h1>North America</h1>
+            </div>
+
             {/* <div className={style.africaFacts}>
                 <img src={africaFF} className={style.aff} alt="logo"></img>
             </div> */}

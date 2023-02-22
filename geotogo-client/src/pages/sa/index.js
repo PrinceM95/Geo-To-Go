@@ -53,6 +53,10 @@ const SAPage = () => {
                 <img src={saFF} className={style.saf} alt="logo"></img>
             </div>
 
+            <div className={style.name}>
+            <h1>South America</h1>
+            </div>
+
             <div className={style.quizLogo}>
             <a href="/africa_quiz" target="_blank" rel="noreferrer">
                 <img src={quiz} className={style.quiz} alt="africa_quiz"></img>

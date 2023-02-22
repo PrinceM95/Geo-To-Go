@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Delius&family=Gentium+Book+Plus&family=M+PLUS+1p:wght@300&family=Phudu&family=Quicksand:wght@300;400&family=Zilla+Slab:wght@300&display=swap');
+
 .africa {
     width: 45%;
     margin-left: 75px;
@@ -51,7 +53,7 @@
     width: 200px;
     height: 200px;
     position: absolute;
-    top: 585px;
+    top: 550px;
     left: 1340px;
     border-radius: 20%;
     transition: all 1s ease;
@@ -63,4 +65,20 @@
 
 .tippy{
     border: none;
+}
+
+.name {
+    width: 185px;
+    height: 50px;
+    position: absolute;
+    top: 250px;
+    left: 600px;
+    border: solid 1px black;
+    border-radius: 30%;
+    transition: all 1s ease;
+    font-size: large;
+    color: 	#301934;
+    background-color: 	#F0E68C;
+    text-align: center;
+    font-family: 'M PLUS 1p', sans-serif;
 }

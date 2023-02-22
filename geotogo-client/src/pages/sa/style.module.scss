@@ -59,3 +59,19 @@
 .quiz:hover {
     transform: scale(1.3);
 }
+
+.name {
+    width: 225px;
+    height: 50px;
+    position: absolute;
+    top: 225px;
+    left: 675px;
+    border: solid 1px black;
+    border-radius: 30%;
+    transition: all 1s ease;
+    font-size: 15px;
+    color: white;
+    background-color: 	#40826D;
+    text-align: center;
+    font-family: 'M PLUS 1p', sans-serif;
+}
