@@ -2,7 +2,7 @@ import 'tippy.js/dist/tippy.css';
 import { useState } from 'react';
 import React from 'react';
 import Tippy from '@tippyjs/react';
-import countries from './data';
+import {countries,getCountryByName} from './data';
 import style from './style.module.scss';
 import saFF from '../../assets/sa_facts.gif';
 import quiz from '../../assets/quiz.png';
@@ -18,8 +18,10 @@ const SAPage = () => {
         .then((response)=> response.json())
         .then((data)=> {
             console.log(data[0])
-            setData(data[0])
             
+            let description=getCountryByName(country).description
+            data[0].description=description
+            setData(data[0])
         })
         .catch((error)=>{
             console.log(error)
@@ -32,16 +34,19 @@ const SAPage = () => {
                       {countries.map((country, idx) => {
                     return <>
                     <Tippy content={country.name}>
-                    <path d={country.d} fill={country.fill} stroke={country.stroke} onClick= {()=> handleClick(country.name)}/>
+                    <path d={country.d} onClick= {()=> handleClick(country.name)}/>
                     </Tippy>
                     </> 
                 })}
             </svg>
             <div className={style.sADetail}>
-                <h1>{data?.name?.common}</h1>
+            <h1>{data?.name?.common}</h1>
                 <h3>Capital: {data?.capital}</h3>
-                <h3>Languages: {data?.languages?.ara}</h3>
+                <h3>Languages: {data?.languages && Object.values(data?.languages).map((l)=>{
+                    return <span key={l}>{l}, </span>
+                }) }</h3>
                 {flag &&<img src={data?.flags?.png} alt="flag pic"></img>}
+                <p>{data?.description}</p>
             </div>
 
             <div className={style.saFacts}>

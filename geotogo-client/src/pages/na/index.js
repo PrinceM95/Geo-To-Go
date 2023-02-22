@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './style.module.scss';
-import countries from './data';
+import {countries,getCountryByName} from './data';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import { useState } from 'react';
@@ -19,8 +19,10 @@ const NAPage = () => {
         .then((response)=> response.json())
         .then((data)=> {
             console.log(data[0])
-            setData(data[0])
             
+            let description=getCountryByName(country).description
+            data[0].description=description
+            setData(data[0])
         })
         .catch((error)=>{
             console.log(error)
@@ -38,10 +40,13 @@ const NAPage = () => {
                 })}
             </svg>
             <div className={style.nADetail}>
-                <h1>{data?.name?.common}</h1>
+            <h1>{data?.name?.common}</h1>
                 <h3>Capital: {data?.capital}</h3>
-                <h3>Languages: {data?.languages?.ara}</h3>
+                <h3>Languages: {data?.languages && Object.values(data?.languages).map((l)=>{
+                    return <span key={l}>{l}, </span>
+                }) }</h3>
                 {flag &&<img src={data?.flags?.png} alt="flag pic"></img>}
+                <p>{data?.description}</p>
             </div>
 
             {/* <div className={style.africaFacts}>

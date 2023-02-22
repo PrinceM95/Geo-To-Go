@@ -35,8 +35,11 @@ const countries = [
      
 
 
+function getCountryByName(name){
+    let country=countries.find((c)=>{
+        return c.name=== name
+    })
+    return country
+}
 
-
-
-
-export default countries;
+export {countries,getCountryByName}
