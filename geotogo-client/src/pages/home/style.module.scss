@@ -3,17 +3,16 @@
     width: 40%;
     margin-left: 575px;
     margin-top: 30px;
-    // border: solid 1px #FEBE10;
-    background-color: #002D62;
+    background-color: #0a2351;
     border-radius: 60%;
     display: left;
 }
 
 .worldMap path {
-    stroke: #FEBE10;
-    stroke-width: .5px ;
+    stroke: black;
+    stroke-width: 1px ;
     transition: fill 0.3s;
-    fill: #106918
+    fill: #1DB954
 }
 
 .worldMap :hover {
@@ -21,10 +20,11 @@
 }
 
 body {
-    background-image: url("../../assets/world_map.jpg");
+    background: url("../../assets/back5.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100%;
 }
 
 .prompt{

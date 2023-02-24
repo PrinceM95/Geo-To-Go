@@ -5,10 +5,9 @@
     justify-content: center;
     margin: auto;
     font-size: 23px;
-    background: #002D62;
-    // box-shadow: 2px 2px 2px #FEBE10, -2px -2px 2px #FEBE10;
+    background: #0a2351;
     color: #FEBE10;
-    height: 3rem;
+    height: 1rem;
     position: fixed;
     text-align: center;
     left: 0;
@@ -16,11 +15,14 @@
     right: 0;
     width: 100%;
     padding-bottom: 50px;
-    
+    font-size: 20px;
 }
 
 .socialList {
-    display: flex;
+    display: contents;
     justify-content: center;
     align-items: center;
+    bottom: 1rem;
+    width: 10%;
+    left: 300px;
 }

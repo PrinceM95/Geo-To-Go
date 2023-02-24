@@ -1,20 +1,17 @@
 .europe {
-    width: 45%;
-    margin-left: 75px;
-    margin-top: 70px;
-    border: solid 3px #002D62;
-     // background-color: #002D62;
+    width: 50%;
+    margin-left: 35px;
+    margin-top: 50px;
+    border: solid 3px black;
     background-image: url("../../assets/eu.gif");
     background-size: 210%;
     background-repeat: no-repeat;
     border-radius: 40%;
     display: left;
-     // border-radius: 40%;
-     // display: left;
 }
 
 .europe path {
-    fill: #006400;
+    fill: #1DB954;
     stroke: black;
     stroke-width: 1px ;
     transition: fill 0.3s;
@@ -30,20 +27,51 @@
     border-radius: 40%;
     border: solid 3px black;
     position: absolute;
-    top: 125px;
-    left: 650px;
+    top: 635px;
+    left: 635px;
 }
+
 .europeDetail{
     width: 40%;
     min-height: 300px;
     padding: 5px;
     background-color: white;
     position:absolute;
-    top: 200px;
+    top: 115px;
     right: 90px;
-    background-color: #CC5500;
+    background-color: #73C2FB;
     border-radius: 10%;
     border: solid 3px black;
     text-align: center;
     color: black;
+}
+
+.quiz {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 575px;
+    left: 1340px;
+    border-radius: 20%;
+    transition: all 1s ease;
+}
+
+.quiz:hover {
+    transform: scale(1.3);
+}
+
+.name {
+    width: 175px;
+    height: 60px;
+    position: absolute;
+    top: 275px;
+    left: 675px;
+    border: solid 1px black;
+    border-radius: 30%;
+    transition: all 1s ease;
+    font-size: large;
+    color: #FAF9F6;
+    background-color: 	#6082B6;
+    text-align: center;
+    font-family: 'M PLUS 1p', sans-serif;
 }
