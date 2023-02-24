@@ -35,7 +35,7 @@ const AsiaPage = () => {
 			<svg width="700" height="625" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
 				{countries.map((country, idx) => {
 							return (
-								<Tippy content={country.name}>
+								<Tippy content={country.name} key = {idx}>
 									<path d={country.d} onClick= {()=> handleClick(country.name)} />
 								</Tippy> )
 						})}

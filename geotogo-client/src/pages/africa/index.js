@@ -46,6 +46,7 @@ const AfricaPage = () => {
                 <h3>Languages: {data?.languages && Object.values(data?.languages).map((l)=>{
                     return <span key={l}>{l}, </span>
                 }) }</h3>
+                <h3>Population: {data?.population}</h3>
                 {flag &&<img src={data?.flags?.png} alt="flag pic"></img>}
                 <p>{data?.description}</p>
             </div>
