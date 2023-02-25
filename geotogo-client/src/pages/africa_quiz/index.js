@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import style from './style.module.scss';
+import world from '../../assets/world4.mp4';
 
 const AfricaQPage = () => {
 
@@ -16,7 +17,7 @@ const AfricaQPage = () => {
             { id: 0, text: "82", isCorrect: false },
             { id: 1, text: "23", isCorrect: false },
             { id: 2, text: "54", isCorrect: true },
-            { id: 3, text: "Too many!", isCorrect: false },
+            { id: 3, text: "Too many", isCorrect: false },
           ],
         },
         {
@@ -25,33 +26,33 @@ const AfricaQPage = () => {
             { id: 0, text: "Brazzaville", isCorrect: true },
             { id: 1, text: "Kinshasa", isCorrect: false },
             { id: 2, text: "Pretoria", isCorrect: false },
-            { id: 3, text: "I don't know, laisse moi", isCorrect: false },
+            { id: 3, text: "Pointe Noire", isCorrect: false },
           ],
         },
         {
-          text: "Who was the second president of the US?",
+          text: "What is the capital of Nigeria?",
           options: [
-            { id: 0, text: "John Adams", isCorrect: true },
-            { id: 1, text: "Paul Revere", isCorrect: false },
-            { id: 2, text: "Thomas Jefferson", isCorrect: false },
-            { id: 3, text: "Benjamin Franklin", isCorrect: false },
+            { id: 0, text: "Abuja", isCorrect: true },
+            { id: 1, text: "Lagos", isCorrect: false },
+            { id: 2, text: "Jos", isCorrect: false },
+            { id: 3, text: "Benin City", isCorrect: false },
           ],
         },
         {
-          text: "What is the largest state in the US?",
+          text: "What is the capital of Egypt?",
           options: [
-            { id: 0, text: "California", isCorrect: false },
-            { id: 1, text: "Alaska", isCorrect: true },
-            { id: 2, text: "Texas", isCorrect: false },
-            { id: 3, text: "Montana", isCorrect: false },
+            { id: 0, text: "Alexandria", isCorrect: false },
+            { id: 1, text: "Cairo", isCorrect: true },
+            { id: 2, text: "Giza", isCorrect: false },
+            { id: 3, text: "Dahab", isCorrect: false },
           ],
         },
         {
-          text: "Which of the following countries DO NOT border the US?",
+          text: "What is the capital of Ethiopia?",
           options: [
-            { id: 0, text: "Canada", isCorrect: false },
-            { id: 1, text: "Russia", isCorrect: true },
-            { id: 2, text: "Cuba", isCorrect: true },
+            { id: 0, text: "Addis Ababa", isCorrect: true },
+            { id: 1, text: "Russia", isCorrect: false },
+            { id: 2, text: "Cuba", isCorrect: false },
             { id: 3, text: "Mexico", isCorrect: false },
           ],
         },
@@ -107,7 +108,7 @@ const AfricaQPage = () => {
                  })}
             </ul>
         </div>
-        )}
+        )}      
     </div>
     ); 
 }

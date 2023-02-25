@@ -12,7 +12,7 @@
     stroke: black;
     stroke-width: 1px ;
     transition: fill 0.3s;
-    fill: #1DB954
+    fill: #17B169
 }
 
 .worldMap :hover {
@@ -27,11 +27,198 @@ body {
     min-height: 100%;
 }
 
+
+.naQuote{
+    top: 225px;
+    left: 175px;
+    position: absolute;
+    background-color: #0a2351;
+    width: 335px;
+    height: 60px;
+    color: goldenrod;
+    text-align: left;
+    border-radius: .3rem;
+    border: solid 1px black;
+}
+
+
+.amFlag{
+    top: 132px;
+    left: 300px;
+    position: absolute;
+}
+
+.amFlag:hover {
+    transform: scale(1.3);
+}
+
+
+.hdt {
+    top: 200px;
+    left: 457px;
+    position: absolute;
+}
+
+.saQuote{
+    top: 650px;
+    left: 210px;
+    position: absolute;
+    background-color: #0a2351;
+    width: 265px;
+    height: 75px;
+    color: goldenrod;
+    border-radius: .3rem;
+    text-align: left;
+    opacity: .9;
+    border: solid 1px black;
+}
+
+.brFlag{
+    top: 570px;
+    left: 275px;
+    position: absolute;
+}
+
+.brFlag:hover {
+    transform: scale(1.3);
+}
+
+
+.pele {
+    top: 615px;
+    left: 435px;
+    position: absolute;
+}
+
+.afQuote{
+    top: 425px;
+    left: 140px;
+    position: absolute;
+    font-weight: bold;
+    background-color: #0a2351;
+    width: 280px;
+    height: 90px;
+    color: goldenrod;
+    text-align: left;
+    border-radius: .3rem;
+    opacity: .9;
+    border: solid 1px black;
+}
+
+.saFlag{
+    top: 360px;
+    left: 225px;
+    position: absolute;
+}
+
+.saFlag:hover {
+    transform: scale(1.3);
+}
+
+
+.nelson {
+    top: 415px;
+    left: 365px;
+    position: absolute;
+}
+
+
+.euQuote{
+    top: 225px;
+    left: 1435px;
+    position: absolute;
+    font-weight: bold;
+    background-color: #0a2351;
+    width: 325px;
+    height: 75px;
+    color: goldenrod;
+    text-align: right;
+    border-radius: .3rem;
+    opacity: .9;
+    border: solid 1px black;
+}
+
+.geFlag{
+    top: 140px;
+    left: 1315px;
+    position: absolute;
+}
+
+.geFlag:hover {
+    transform: scale(1.3);
+}
+
+.einstein {
+    top: 175px;
+    left: 1315px;
+    position: absolute;
+}
+
+.asQuote{
+    top: 440px;
+    left: 1508px;
+    position: absolute;
+    font-weight: bold;
+    background-color: #0a2351;
+    width: 348px;
+    height: 55px;
+    color: goldenrod;
+    text-align:right;
+    border-radius: .3rem;
+    opacity: .9;
+    border: solid 1px black;
+}
+
+.chFlag{
+    top: 340px;
+    left: 1385px;
+    position: absolute;
+}
+
+.chFlag:hover {
+    transform: scale(1.3);
+}
+
+.lee {
+    top: 400px;
+    left: 1405px;
+    position: absolute;
+}
+
+
+.ocQuote{
+    top: 650px;
+    left: 1425px;
+    position: absolute;
+    font-weight: bold;
+    background-color: #0a2351;
+    width: 405px;
+    height: 55px;
+    color: goldenrod;
+    text-align:right;
+    border-radius: .3rem;
+    border: solid 1px black;
+    opacity: .9;
+}
+
+.auFlag{
+    top: 550px;
+    left: 1345px;
+    position: absolute;
+}
+
+.auFlag:hover {
+    transform: scale(1.3);
+}
+
+.franklin {
+    top: 600px;
+    left: 1350px;
+    position: absolute;
+}
+
+
 .prompt{
-    max-width: 500px;
-    height: 125px;
-    border-radius: 40%;
-    // border: solid 3px black;
     position: absolute;
     top: 225px;
     left: 750px;
@@ -48,8 +235,7 @@ body {
     -o-animation: fadeOut 3000 3s ease-in;
     animation: fadeOut 3000 3s ease-in;
     color: goldenrod;
-    font-weight: bold;
-    font-size: 25px
+    font-size: 25px;
 }
 
 @-webkit-keyframes fadeIn{

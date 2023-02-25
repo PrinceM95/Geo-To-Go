@@ -7,8 +7,8 @@ const LandingPage = () => {
     return (
         <div className={style.landing}>
             <a className={style.button} href="/home" target="_blank" rel="noreferrer">Enter</a>
-        <div className={style.opener}> “Impossible to map the world – we select and make graphics so that we can understand it” -Roger Tomlinson
-        </div>
+        {/* <div className={style.opener}> “Impossible to map the world – we select and make graphics so that we can understand it” -Roger Tomlinson
+        </div> */}
         <video  autoPlay muted loop width="100%" height="30%">
             <source src={world}/> 
         </video>
