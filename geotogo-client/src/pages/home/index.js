@@ -3,10 +3,12 @@ import style from './style.module.scss';
 import continents from './data';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
+// import Header from './components/header';
+// import Footer from './components/footer';
 
 
 const HomePage = () => {
-
+    // <Header className={style.header}/>
 
     return (
         <div className={style.worldMap}>

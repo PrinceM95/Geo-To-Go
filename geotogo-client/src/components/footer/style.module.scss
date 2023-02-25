@@ -15,12 +15,14 @@
     right: 0;
     width: 100%;
     padding-bottom: 50px;
-    
+    font-size: 20px;
 }
 
 .socialList {
-    display: flex;
+    display: contents;
     justify-content: center;
     align-items: center;
     bottom: 1rem;
+    width: 10%;
+    left: 300px;
 }

@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Delius&family=Gentium+Book+Plus&family=M+PLUS+1p:wght@300&family=Phudu&family=Quicksand:wght@300;400&family=Zilla+Slab:wght@300&display=swap');
 
 .africa {
-    width: 45%;
-    margin-left: 75px;
+    width: 50%;
+    margin-left: 90px;
     margin-top: 90px;
-    border: solid 3px black;
+    border: solid 2px black;
     background-image: url("../../assets/Savanna.gif");
     background-size: 140%;
     background-repeat: no-repeat;
-    border-radius: 40%;
+    border-radius: 1rem;
 }
 
 .africa path {
@@ -30,22 +30,22 @@
     padding: 5px;
     background-color: white;
     position:absolute;
-    top: 125px;
-    right: 90px;
+    top: 152px;
+    right: 80px;
     background-color: #F08000;
-    border-radius: 10%;
-    border: solid 3px black;
+    border-radius: 1rem;
+    border: solid 2px black;
     text-align: center;
     color: black;
 }
 
 .aff {
     max-width: 500px;
-    height: 125px;
-    border-radius: 40%;
-    border: solid 3px black;
+    height: 150px;
+    border-radius: 1rem;
+    border: solid 2px black;
     position: absolute;
-    top: 650px;
+    top: 675px;
     left: 475px;
 }
 
@@ -68,17 +68,17 @@
 }
 
 .name {
-    width: 185px;
+    width: 165px;
     height: 50px;
     position: absolute;
     top: 250px;
-    left: 600px;
+    left: 675px;
     border: solid 1px black;
-    border-radius: 30%;
+    border-radius: 1rem;
     transition: all 1s ease;
     font-size: large;
     color: 	#301934;
-    background-color: 	#F0E68C;
+    background-color: #F0E68C;
     text-align: center;
     font-family: 'M PLUS 1p', sans-serif;
 }

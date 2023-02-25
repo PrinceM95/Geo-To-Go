@@ -16,7 +16,7 @@ const Header = () => (
     <div className={style.header}>
         {/* <h1>Geo-To-Go</h1> */}
         <ul className={style.navList}>
-            <NavLink to="/">HOME</NavLink>
+            <NavLink to="/home">HOME</NavLink>
             <Tippy content="Africa"><NavLink to='/africa'><img src={africaIcon} alt="Icon for Africa"></img></NavLink></Tippy>
             <Tippy content="Asia"><NavLink to='/asia'><img src={asiaIcon} alt="Icon for Asia"></img></NavLink></Tippy>
             <Tippy content="Europe"><NavLink to='/europe'><img src={europeIcon} alt="Icon for Europe"></img></NavLink></Tippy>

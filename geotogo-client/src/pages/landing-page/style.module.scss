@@ -1,0 +1,116 @@
+.landing {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    margin: 0;
+}
+
+body {
+    overflow: hidden !important;
+}
+
+
+.button{
+    position: absolute;
+    border: 1px solid goldenrod;
+    background: #40826D;
+    color: 		white;
+    width: 150px;
+    height: 40px;
+    font-size: xx-large;
+    border-radius: 1rem;
+    opacity: .6;
+    top: 60vh;
+    bottom: 0px;
+    left: 0px;
+    right: -1100px;
+    margin: auto;
+    transition: .3s;
+    text-align: center;
+    transition: all 3s ease;
+}
+
+.opener{
+    position: absolute;
+    // border: 1px solid goldenrod;
+    // background: #40826D;
+    color: 		white;
+    width: 150px;
+    height: 40px;
+    font-size: xx-large;
+    border-radius: 1rem;
+    // opacity: .6;
+    // left: 0px;
+    right: 325px;
+    top: 200px;
+    text-align: justify;
+}
+
+
+.button:hover {
+    transform: scale(1.3);
+}
+
+.button{
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 6s;
+    -moz-animation: fadeIn ease 6s;
+    -o-animation: fadeIn ease 6s;
+    -ms-animation: fadeIn ease 6s;
+    -webkit-animation: fadeOut 3000 3s ease-in;
+    -moz-animation: fadeOut 3000 3s ease-in;
+    -o-animation: fadeOut 3000 3s ease-in;
+    animation: fadeOut 3000 3s ease-in;
+}
+
+@-webkit-keyframes fadeIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@-moz-keyframes fadeIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@-o-keyframes fadeIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes fadeIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@-webkit-keyframes fadeOut{
+    0%{opacity: 0;}
+    30%{opacity: 1;}
+    80%{opacity: .9;}
+    100%{opacity: 0;}
+}
+
+@-moz-keyframes fadeOut{
+    0%{opacity: 0;}
+    30%{opacity: 1;}
+    80%{opacity: .9;}
+    100%{opacity: 0;}
+}
+
+@-o-keyframes fadeOut{
+    0%{opacity: 0;}
+    30%{opacity: 1;}
+    80%{opacity: .9;}
+    100%{opacity: 0;}
+}
+
+@keyframes fadeOut{
+    0%{opacity: 0;}
+    30%{opacity: 1;}
+    80%{opacity: .9;}
+    100%{opacity: 0;}
+}
+
