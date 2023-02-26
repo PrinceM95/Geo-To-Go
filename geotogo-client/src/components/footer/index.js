@@ -1,6 +1,6 @@
 import React from "react";
-import ReactDOM from 'react-dom';
-import { SocialIcon } from 'react-social-icons';
+// import ReactDOM from 'react-dom';
+// import { SocialIcon } from 'react-social-icons';
 import style from './style.module.scss';
 
 const Footer = () => ( 
