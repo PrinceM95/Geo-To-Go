@@ -18,7 +18,6 @@ import franklin from '../../assets/franklin.png';
 
 
 const HomePage = () => {
-
     return (
         <div className={style.worldMap}>
             <div className={style.prompt}>Click on a continent to begin exploring!</div>
