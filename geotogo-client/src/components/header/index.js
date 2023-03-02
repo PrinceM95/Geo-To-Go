@@ -7,6 +7,7 @@ import europeIcon from "../../assets/iconEurope.png"
 import northAmericaIcon from "../../assets/iconNorthAmerica.png"
 import oceaniaIcon from "../../assets/iconOceania.png"
 import southAmericaIcon from "../../assets/iconSouthAmerica.png"
+import geo2goLogo from "../../assets/geo2goLogo.png"
 import aboutUs from "../../assets/aboutUs2.png"
 // import quiz from "../../assets/quiz.png"
 import Tippy from '@tippyjs/react';
@@ -14,9 +15,9 @@ import 'tippy.js/dist/tippy.css';
 
 const Header = () => (
     <div className={style.header}>
-        {/* <h1>Geo-To-Go</h1> */}
+        <h1 className={style.gLogo}><NavLink to="/home"><img src={geo2goLogo} alt="Geo2Go Logo"></img></NavLink></h1>
+        <h2>Menu</h2>
         <ul className={style.navList}>
-            <NavLink to="/home">HOME</NavLink>
             <Tippy content="Africa"><NavLink to='/africa'><img src={africaIcon} alt="Icon for Africa"></img></NavLink></Tippy>
             <Tippy content="Asia"><NavLink to='/asia'><img src={asiaIcon} alt="Icon for Asia"></img></NavLink></Tippy>
             <Tippy content="Europe"><NavLink to='/europe'><img src={europeIcon} alt="Icon for Europe"></img></NavLink></Tippy>
