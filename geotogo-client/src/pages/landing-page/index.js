@@ -7,14 +7,15 @@ const LandingPage = () => {
 
     return (
         <div className={style.landing}>
-            <div className={style.button}></div>
-        <div className={style.opener}> “Your one-stop shop for continents, countries, capitals and cultures at their core. We are committed to providing a positive learning environment that inspires humanity, both in the air and on the ground. This is Geo-To-Go”
+            <h1 className={style.landingHeader}>"We are committed to providing a positive learning environment that inspires humanity, both in the air and on the ground."</h1>
+            <a className={style.button} href="/home" target="_blank" rel="noreferrer">Enter</a>
+            {/* <div className={style.opener}> “Impossible to map the world – we select and make graphics so that we can understand it” -Roger Tomlinson
+        </div> */}
+            <video autoPlay muted loop >
+                <source src={world} />
+            </video>
         </div>
-        <video  autoPlay muted loop width="100%" height="30%">
-            <source src={world}/> 
-        </video>
-        </div>
-        );  
-    }
-    
-    export default LandingPage;
+    );
+}
+
+export default LandingPage;
