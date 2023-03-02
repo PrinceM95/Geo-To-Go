@@ -15,7 +15,7 @@ body {
 .landingHeader{
     position: absolute;    
     color:white;
-    width: 600px;
+    width: 30%;
     top: 20vh;
     left: 5vw;
     z-index: 100;
@@ -42,6 +42,7 @@ body {
     transition: .3s;
     text-align: center;
     transition: all 3s ease;
+    text-decoration: none;
 }
 
 .opener{
@@ -121,3 +122,13 @@ body {
     100%{opacity: 0;}
 }
 
+@media only screen and (max-width:800px){
+    .landing video{
+        position: relative;
+        min-width: 50%;
+        min-height: 50%;
+    }
+    .landingHeader{
+        width: 80%;
+    }
+}
