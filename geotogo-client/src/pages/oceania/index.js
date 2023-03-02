@@ -4,7 +4,7 @@ import {countries,getCountryByName} from './data';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import { useState } from 'react';
-// import ocFF from '../../assets/oc_facts.gif';
+import ocFF from '../../assets/ocFigures.gif';
 import quiz from '../../assets/quiz.png';
 
 const OceaniaPage = () => {
@@ -30,7 +30,7 @@ const OceaniaPage = () => {
     
     return (
         <div className={style.oceania}>
-            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280.000000 878.000000">
+            <svg width="700" height="600" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280.000000 878.000000">
                 <g transform="translate(0.000000,878.000000) scale(0.100000,-0.100000)">
                 {countries.map((country, idx) => {
                     return (
@@ -51,9 +51,9 @@ const OceaniaPage = () => {
                 <p>{data?.description}</p>
             </div> 
 
-            {/* <div className={style.ocFacts}>
+            <div className={style.ocFacts}>
                 <img src={ocFF} className={style.ocf} alt="logo"></img>
-            </div>  */}
+            </div> 
 
             <div className={style.quizLogo}>
             <a href="/africa_quiz" target="_blank" rel="noreferrer">

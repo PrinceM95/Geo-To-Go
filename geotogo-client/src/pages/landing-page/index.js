@@ -9,13 +9,13 @@ const LandingPage = () => {
     return (
         <div className={style.landing}>
             <div className={style.button}><Link to="/home" target="_blank" rel="noreferrer">Enter</Link></div>
-        <div className={style.opener}> “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+        <div className={style.opener}> “Your one-stop shop for continents, countries, capitals and cultures at their core. Newfound discovery awaits. This is Geo-To-Go”
         </div>
         <video  autoPlay muted loop width="100%" height="30%">
             <source src={world}/> 
         </video>
         </div>
-        ); 
+        );  
     }
     
     export default LandingPage;

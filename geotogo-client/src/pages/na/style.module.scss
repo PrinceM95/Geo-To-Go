@@ -1,14 +1,12 @@
 .na {
-    width: 40%;
-    height: 20%;
-    margin-left: 75px;
+    width: 50%;
+    margin-left: 90px;
     margin-top: 50px;
-    border: solid 3px black;
+    border: solid 2px black;
     background-image: url("../../assets/na.gif");
-    background-size: 210%;
+    background-size: 140%;
     background-repeat: no-repeat;
-    border-radius: 40%;
-    display: left;
+    border-radius: 1rem;
 }
 
 .na path {
@@ -16,22 +14,35 @@
     stroke: black;
     stroke-width: .5px ;
     transition: fill 0.3s;
+    transition: all 1s ease;
+    border: none !important;
 }
 
 .na :hover {
-    fill: #FEBE10;
+    fill: #ACE1AF;
 }
+
+.naff {
+    max-width: 500px;
+    height: 140px;
+    border-radius: .5rem;
+    border: solid 2px black;
+    position: absolute;
+    top: 650px;
+    left: 520px;
+}
+
 .nADetail{
     width: 40%;
     min-height: 300px;
     padding: 5px;
     background-color: white;
     position:absolute;
-    top: 150px;
-    right: 150px;
-    background-color: #F8DE7E;
-    border-radius: 10%;
-    border: solid 3px rgb(9, 8, 8);
+    top: 113px;
+    right: 80px;
+    background-color: #C1E1C1;
+    border-radius: 1rem;
+    border: solid 2px rgb(9, 8, 8);
     text-align: center;
     color: rgb(2, 2, 2);
 }
@@ -40,8 +51,8 @@
     width: 200px;
     height: 200px;
     position: absolute;
-    top: 585px;
-    left: 1275px;
+    top: 625px;
+    left: 1640px;
     border-radius: 20%;
     transition: all 1s ease;
 }
@@ -51,15 +62,15 @@
 }
 
 .name {
-    width: 225px;
+    width: 285px;
     height: 50px;
     position: absolute;
-    top: 190px;
-    left: 190px;
+    top: 175px;
+    left: 725px;
     border: solid 1px black;
-    border-radius: 30%;
+    border-radius: 1rem;
     transition: all 1s ease;
-    font-size: 15px;
+    font-size: large;
     color: white;
     background-color: 	#00563B;
     text-align: center;
