@@ -6,7 +6,8 @@
     margin: auto;
     font-size: 23px;
     background: #0a2351;
-    color: #FEBE10;
+    color: white;
+    // color: #FEBE10;
     height: 1rem;
     position: fixed;
     text-align: center;
@@ -17,13 +18,33 @@
     padding-bottom: 50px;
     font-size: 20px;
     box-shadow: 2px 2px 4px goldenrod, -2px -2px 4px goldenrod;
+    
+    & h3 {
+        padding: 10px;
+    }
 }
 
 .socialList {
-    display: contents;
-    justify-content: center;
-    align-items: center;
-    bottom: 1rem;
-    width: 10%;
-    left: 300px;
+    // display: contents;
+    // justify-content: center;
+    // align-items: center;
+    // bottom: 1rem;
+    // width: 10%;
+    // left: 300px;
+    margin-left: 5px;
+
+    & .social-icon {
+        padding: 25px;
+    }
+
+    // & a.social-icon {
+    //     padding: 25px;
+    // }
+
+    // & a .social-icon {
+    //     padding: 25px;
+    // }
+
 }
+
+

@@ -94,7 +94,7 @@ const HomePage = () => {
                     return (
                         <Tippy content={continents.name} key = {idx}>
                             <a href={continents.name}>
-                                <path d={continents.d} fill={continents.fill} stroke={continents.stroke} />
+                                <path d={continents.d} />
                             </a>
                         </Tippy> )
                 })}

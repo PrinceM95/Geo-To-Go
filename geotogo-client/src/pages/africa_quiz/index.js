@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import style from './style.module.scss';
-import world from '../../assets/world4.mp4';
+// import world from '../../assets/world4.mp4';
 
 const AfricaQPage = () => {
 

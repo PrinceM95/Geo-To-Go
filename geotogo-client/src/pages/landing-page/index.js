@@ -9,7 +9,7 @@ const LandingPage = () => {
     return (
         <div className={style.landing}>
             <div className={style.button}><Link to="/home" target="_blank" rel="noreferrer">Enter</Link></div>
-        <div className={style.opener}> “Your one-stop shop for continents, countries, capitals and cultures at their core. Newfound discovery awaits. This is Geo-To-Go”
+        <div className={style.opener}> “Your one-stop shop for continents, countries, capitals and cultures at their core. We are committed to providing a positive learning environment that inspires humanity, both in the air and on the ground. This is Geo-To-Go”
         </div>
         <video  autoPlay muted loop width="100%" height="30%">
             <source src={world}/> 
