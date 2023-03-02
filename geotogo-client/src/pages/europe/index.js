@@ -2,7 +2,7 @@ import 'tippy.js/dist/tippy.css';
 import React from 'react';
 import Tippy from '@tippyjs/react';
 import {countries,getCountryByName} from './data';
-import euFF from '../../assets/eu_facts.gif';
+import euFF from '../../assets/euFigures.gif';
 import style from './style.module.scss';
 import { useState } from 'react';
 import quiz from '../../assets/quiz.png';
@@ -31,7 +31,7 @@ const EuropePage = () => {
 
     return (
         <div className={style.europe}>
-        <svg width="700" height="625" version="1.2" viewBox="0 0 1000 684"  xmlns="http://www.w3.org/2000/svg">
+        <svg width="575" height="600" version="1.2" viewBox="0 0 1000 684"  xmlns="http://www.w3.org/2000/svg">
         {countries.map((country, idx) => {
                     return (
                     <Tippy content={country.name} key = {idx}>

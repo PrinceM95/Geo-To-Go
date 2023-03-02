@@ -4,7 +4,7 @@ import {countries,getCountryByName} from './data';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import { useState } from 'react';
-import asiaFF from '../../assets/asia_facts.gif';
+import asiaFF from '../../assets/asFigures.gif';
 import quiz from '../../assets/quiz.png';
 
 

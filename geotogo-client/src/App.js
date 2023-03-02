@@ -1,9 +1,9 @@
-// import logo from './logo.svg';
 import PageSwitch from './components/app-router';
 import { BrowserRouter } from 'react-router-dom';
 import style from './style.modules.scss';
 import Header from './components/header';
 import Footer from './components/footer';
+
 
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <div className={style.page}>
         <PageSwitch />
       </div>
-      <Footer className={style.footer} />
+      <Footer className={style.footer}/>
     </BrowserRouter>
   );
 }
