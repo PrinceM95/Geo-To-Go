@@ -1,13 +1,12 @@
 .sa {
-    width: 48%;
-    margin-left: 75px;
+    width: 50%;
+    margin-left: 90px;
     margin-top: 50px;
-    border: solid 3px black;
+    border: solid 2px black;
     background-image: url("../../assets/sa.gif");
     background-size: 140%;
     background-repeat: no-repeat;
-    border-radius: 40%;
-    display: left;
+    border-radius: 1rem;
 }
 
 
@@ -16,34 +15,41 @@
     stroke: black;
     stroke-width: .5px ;
     transition: fill 0.3s;
+    transition: all 1s ease;
+    border: none !important;
 }
 
 .sa :hover {
-    fill: #FEBE10;
+    fill: #ACE1AF;
 }
 
 .saf{
     max-width: 500px;
-    height: 125px;
-    border-radius: 40%;
-    border: solid 3px black;
+    height: 150px;
+    border-radius: .5rem;
+    border: solid 2px black;
     position: absolute;
-    top: 695px;
-    left: 550px;
+    top: 660px;
+    left: 515px;
 }
+
 .sADetail{
     width: 40%;
     min-height: 300px;
     padding: 5px;
     background-color: white;
     position:absolute;
-    top: 115px;
-    right: 50px;
+    top: 112px;
+    right: 80px;
     background-color: #8cc751;
-    border-radius: 10%;
-    border: solid 3px black;
+    border-radius: 1rem;
+    border: solid 2px black;
     text-align: center;
     color: black;
+}
+.sADetail p {
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .quiz {
@@ -61,15 +67,15 @@
 }
 
 .name {
-    width: 225px;
+    width: 280px;
     height: 50px;
     position: absolute;
-    top: 225px;
+    top: 250px;
     left: 675px;
     border: solid 1px black;
-    border-radius: 30%;
+    border-radius: 1rem;
     transition: all 1s ease;
-    font-size: 15px;
+    font-size: large;
     color: white;
     background-color: 	#40826D;
     text-align: center;

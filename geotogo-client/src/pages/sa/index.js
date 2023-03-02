@@ -4,7 +4,7 @@ import React from 'react';
 import Tippy from '@tippyjs/react';
 import {countries,getCountryByName} from './data';
 import style from './style.module.scss';
-import saFF from '../../assets/sa_facts.gif';
+import saFF from '../../assets/saFigures.gif';
 import quiz from '../../assets/quiz.png';
 
 const SAPage = () => {
@@ -30,7 +30,7 @@ const SAPage = () => {
 
     return (
         <div className={style.sa}>
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+            <svg width="800" height="625"version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
                       {countries.map((country, idx) => {
                     return <>
                     <Tippy content={country.name}>

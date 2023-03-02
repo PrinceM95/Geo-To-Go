@@ -1,13 +1,12 @@
 .europe {
     width: 50%;
-    margin-left: 35px;
-    margin-top: 50px;
-    border: solid 3px black;
+    margin-left: 90px;
+    margin-top: 60px;
+    border: solid 2px black;
     background-image: url("../../assets/eu.gif");
     background-size: 210%;
     background-repeat: no-repeat;
-    border-radius: 40%;
-    display: left;
+    border-radius: 1rem;
 }
 
 .europe path {
@@ -15,6 +14,8 @@
     stroke: black;
     stroke-width: 1px ;
     transition: fill 0.3s;
+    transition: all 1s ease;
+    border: none !important;
 }
 
 .europe :hover {
@@ -23,12 +24,12 @@
 
 .euf{
     max-width: 500px;
-    height: 125px;
-    border-radius: 40%;
+    height: 150px;
+    border-radius: 1rem;
     border: solid 3px black;
     position: absolute;
     top: 635px;
-    left: 635px;
+    left: 525px;
 }
 
 .europeDetail{
@@ -37,13 +38,17 @@
     padding: 5px;
     background-color: white;
     position:absolute;
-    top: 115px;
-    right: 90px;
+    top: 122px;
+    right: 80px;
     background-color: #73C2FB;
-    border-radius: 10%;
-    border: solid 3px black;
+    border-radius: 1rem;
+    border: solid 2px black;
     text-align: center;
     color: black;
+}
+.europeDetail p {
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .quiz {
@@ -61,13 +66,13 @@
 }
 
 .name {
-    width: 175px;
-    height: 60px;
+    width: 165px;
+    height: 50px;
     position: absolute;
-    top: 275px;
+    top: 250px;
     left: 675px;
     border: solid 1px black;
-    border-radius: 30%;
+    border-radius: 1rem;
     transition: all 1s ease;
     font-size: large;
     color: #FAF9F6;
