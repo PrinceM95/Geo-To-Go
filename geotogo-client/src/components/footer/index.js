@@ -6,7 +6,7 @@ const Footer = () => (
 
     <div className={style.footer}>
         <div>
-            <h3> &copy;GeoToGo 2023</h3>
+            <h3> &copy;Geo-To-Go 2023</h3>
         </div>
      
    <div className={style.socialList}> 

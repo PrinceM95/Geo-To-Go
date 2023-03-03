@@ -1,17 +1,21 @@
-import React from "react";
-import style from './style.module.scss';
+import 'tippy.js/dist/tippy.css';
+
 import { NavLink } from "react-router-dom";
+import React from "react";
+// import quiz from "../../assets/quiz.png"
+import Tippy from '@tippyjs/react';
+import aboutUs from "../../assets/aboutUs2.png"
 import africaIcon from "../../assets/iconAfrica.png"
 import asiaIcon from "../../assets/iconAsia.png"
 import europeIcon from "../../assets/iconEurope.png"
 import northAmericaIcon from "../../assets/iconNorthAmerica.png"
 import oceaniaIcon from "../../assets/iconOceania.png"
 import southAmericaIcon from "../../assets/iconSouthAmerica.png"
+
+import style from './style.module.scss';
+
 import geo2goLogo from "../../assets/geo2goLogo.png"
-import aboutUs from "../../assets/aboutUs2.png"
-// import quiz from "../../assets/quiz.png"
-import Tippy from '@tippyjs/react';
-import 'tippy.js/dist/tippy.css';
+
 
 const Header = () => (
     <div className={style.header}>
