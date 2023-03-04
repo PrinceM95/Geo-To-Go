@@ -24,6 +24,7 @@ const AboutPage = () => {
                     <h2>Kadeen Jennings</h2>
                     <h3>WCCI Developer</h3>
                     <p className={style.aboutBio}>Kadeen lives in Columbus, Ohio. His hobbies include Competitive Duck Herding, Geocaching and eating Jello.</p>
+
                 </div>
                 <div className={style.aboutItem3}>
                     <img className={style.aboutImage} src={dougImg} alt="doug-profile" />
