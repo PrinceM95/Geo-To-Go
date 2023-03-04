@@ -3,6 +3,15 @@
 body {
   color: white;
 }
+.backA {
+  background: no-repeat center center fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  width: 100%;
+  position: fixed;
+}
 
 .aboutHeading {
   text-align: center;
