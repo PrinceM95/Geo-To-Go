@@ -32,7 +32,7 @@ const NAPage = () => {
     return (
         <div className={style.backB} style={{ backgroundImage: `url(${background})` }}>
         <div className={style.na}>
-            <svg width="1800" height="585" viewBox="100 0 1604 545" xmlns="http://www.w3.org/2000/svg">
+            <svg width="1800" height="675" viewBox="100 0 1604 545" xmlns="http://www.w3.org/2000/svg">
                 {countries.map((country, idx) => {
                     return (
                     <Tippy content={country.name} key = {idx}>

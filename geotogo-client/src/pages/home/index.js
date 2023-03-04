@@ -78,7 +78,7 @@ const HomePage = () => {
             </div>
 
             <div className={style.lee}>
-                    <img width="175" height="125" src={lee} alt="as_page"></img>
+                    <img width="175" height="115" src={lee} alt="as_page"></img>
             </div>
 
             <div className={style.auFlag}>

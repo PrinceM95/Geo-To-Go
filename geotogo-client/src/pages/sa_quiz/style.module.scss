@@ -2,6 +2,31 @@
     text-align: center;
 }
 
+.header1 {
+    margin-top: 30px;
+    font-size: xx-large;
+    color: 	white;
+    background: #006241;
+    text-align: center;
+}
+
+.header2 {
+    width: 265px;
+    height: 40px;
+    margin-left: 490px;
+    margin-top: 100px;
+    border-radius: 1rem;
+    color: 	white;
+    background: darkblue;
+    text-align: center;
+}
+
+.containerQuiz {
+    width: 100%;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
 .backA {
     background: no-repeat center center fixed;
     background-position: center;
@@ -20,16 +45,14 @@
     border-radius: 16px;
     color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
-        rgba(0, 0, 0.3) 0px 18px 36px -18px;
-
+        rgba(0, 0, 0.3) 0px 18px 36px -18px; 
     width: 60%;
     height: auto;
     background-image:  url("../../assets/sa.gif");
     background-repeat: no-repeat;
     background-size: 100%;
+    
 }
-
-
 
 ul {
     list-style: none;
@@ -43,6 +66,11 @@ li {
     border-radius: 20px;
     font-size: 20px;
     margin-top: 8px;
+    
+    & li:hover {
+        transition: .5s;
+        transform: scale(1.2);
+    }
 }
 
 .question_text {
