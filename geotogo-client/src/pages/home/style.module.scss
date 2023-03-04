@@ -19,12 +19,14 @@
     fill: #FEBE10;
 }
 
-body {
-    background: url("../../assets/back5.jpg");
+.backB {
+    background: no-repeat center center fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100%;
+    width: 100%;
+    position: fixed;
 }
 
 
@@ -220,7 +222,7 @@ body {
 
 .prompt{
     position: absolute;
-    top: 225px;
+    top: 175px;
     left: 750px;
 }
 

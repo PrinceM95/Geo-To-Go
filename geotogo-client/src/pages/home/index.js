@@ -15,10 +15,12 @@ import pele from '../../assets/pele.png';
 import einstein from '../../assets/einstein1.png';
 import lee from '../../assets/lee.png';
 import franklin from '../../assets/franklin.png';
+import background from "../../assets/back5.jpg";
 
 
 const HomePage = () => {
     return (
+        <div className={style.backB} style={{ backgroundImage: `url(${background})` }}>
         <div className={style.worldMap}>
             <div className={style.prompt}>Click on a continent to begin exploring!</div>
             <div className={style.naQuote}><h3 className={style.naWord}> "Amazing the things you find when you bother to search for them" - Sacagewea</h3></div>
@@ -99,6 +101,7 @@ const HomePage = () => {
                         </Tippy> )
                 })}
             </svg>
+            </div>
         </div>
     );
 }

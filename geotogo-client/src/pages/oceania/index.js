@@ -6,6 +6,7 @@ import 'tippy.js/dist/tippy.css';
 import { useState } from 'react';
 import ocFF from '../../assets/ocFigures.gif';
 import quiz from '../../assets/quiz.png';
+import background from "../../assets/oceania2.gif";
 
 const OceaniaPage = () => {
     const[data,setData]= useState({})
@@ -29,8 +30,9 @@ const OceaniaPage = () => {
     }
     
     return (
+        <div className={style.backB} style={{ backgroundImage: `url(${background})` }}>
         <div className={style.oceania}>
-            <svg width="700" height="600" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280.000000 878.000000">
+            <svg width="1000" height="600" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280.000000 878.000000">
                 <g transform="translate(0.000000,878.000000) scale(0.100000,-0.100000)">
                 {countries.map((country, idx) => {
                     return (
@@ -56,16 +58,16 @@ const OceaniaPage = () => {
             </div> 
 
             <div className={style.quizLogo}>
-            <a href="/africa_quiz" target="_blank" rel="noreferrer">
-                <img src={quiz} className={style.quiz} alt="africa_quiz"></img>
+            <a href="/oceania_quiz" target="_blank" rel="noreferrer">
+                <img src={quiz} className={style.quiz} alt="oceania_quiz"></img>
             </a>
             </div>
 
             <div className={style.name}>
             <h1>Oceania</h1>
             </div>
-
         </div>
+    </div>
     );
 }
 

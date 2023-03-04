@@ -1,12 +1,13 @@
 .europe {
     width: 50%;
-    margin-left: 90px;
-    margin-top: 60px;
+    margin-left: 70px;
+    margin-top: 40px;
     border: solid 2px black;
-    background-image: url("../../assets/eu.gif");
-    background-size: 210%;
+    background-image: url("../../assets/back5.jpg");
+    background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 1rem;
+    opacity: 1;
 }
 
 .europe path {
@@ -23,13 +24,13 @@
 }
 
 .euf{
-    max-width: 500px;
-    height: 150px;
+    width: 40%;
+    height: 175px;
     border-radius: 1rem;
-    border: solid 3px black;
+    border: solid 2px black;
     position: absolute;
-    top: 635px;
-    left: 525px;
+    top: 600px;
+    left: 1075px;
 }
 
 .europeDetail{
@@ -38,25 +39,27 @@
     padding: 5px;
     background-color: white;
     position:absolute;
-    top: 122px;
+    top: 40px;
     right: 80px;
-    background-color: #73C2FB;
+    background-image: url("../../assets/back5.jpg");
+    background-size: 100%;
     border-radius: 1rem;
     border: solid 2px black;
     text-align: center;
     color: black;
 }
+
 .europeDetail p {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .quiz {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: 575px;
-    left: 1340px;
+    top: 80px;
+    left: 1700px;
     border-radius: 20%;
     transition: all 1s ease;
 }
@@ -65,18 +68,28 @@
     transform: scale(1.3);
 }
 
+.backB {
+    background: no-repeat center center fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
 .name {
-    width: 165px;
-    height: 50px;
+    width: 145px;
+    height: 53px;
     position: absolute;
-    top: 250px;
-    left: 675px;
+    top: 70px;
+    left: 775px;
     border: solid 1px black;
     border-radius: 1rem;
     transition: all 1s ease;
     font-size: large;
     color: #FAF9F6;
-    background-color: 	#6082B6;
+    background-color: 	#2E5090;
     text-align: center;
     font-family: 'M PLUS 1p', sans-serif;
 }

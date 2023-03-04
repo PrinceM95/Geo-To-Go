@@ -4,14 +4,19 @@ import AboutPage from '../../pages/about';
 import AfricaPage from '../../pages/africa';
 import AfricaQPage from '../../pages/africa_quiz';
 import AsiaPage from '../../pages/asia';
+import AsiaQPage from '../../pages/asia_quiz';
 import QuizPage from '../../pages/quiz';
 import EuropePage from '../../pages/europe';
+import EuropeQPage from '../../pages/europe_quiz';
 import LandingPage from '../../pages/landing-page';
 import HomePage from '../../pages/home';
 import NAPage from '../../pages/na';
+import NAQPage from '../../pages/na_quiz';
 import OceaniaPage from '../../pages/oceania';
+import OceaniaQPage from '../../pages/oceania_quiz';
 import React from 'react';
 import SAPage from '../../pages/sa';
+import SAQPage from '../../pages/sa_quiz';
 
 const PageSwitch = () => (
     <Routes>
@@ -27,6 +32,11 @@ const PageSwitch = () => (
         <Route exact path={'/quiz'} element={<QuizPage />} />
         <Route exact path={'/about'} element={<AboutPage />} />
         <Route exact path={'/africa_quiz'} element={<AfricaQPage />} />
+        <Route exact path={'/asia_quiz'} element={<AsiaQPage />} />
+        <Route exact path={'/europe_quiz'} element={<EuropeQPage />} />
+        <Route exact path={'/na_quiz'} element={<NAQPage />} />
+        <Route exact path={'/sa_quiz'} element={<SAQPage />} />
+        <Route exact path={'/oceania_quiz'} element={<OceaniaQPage />} />
     </Routes>
 );
 
