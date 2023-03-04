@@ -10,28 +10,38 @@ const AboutPage = () => {
     return (
         <div className={style.about}>
             <div className={style.aboutHeading}>
-                <h1>Geo-To-Go Development Team</h1>  
+                <h1>About the Geo-To-Go Development Team</h1>  
             </div>
             <div className={style.aboutContainer}>
-                <div className={style.aboutItem}>
+                <div className={style.aboutItem1}>
+                    
+                    <img className={style.aboutImage} src={constImg} alt="constance-profile" />
                     <h2>Constance Cain</h2>
-                    <img className={style.aboutImage} src={constImg} alt="constance-profile" width='300' height='auto' />
-                    <p className={style.aboutBio}>I live in Columbus, Ohio. I am a student developer at We Can Code IT. My hobbies include Photography and Painting</p>  
+                    <h3>WCCI Developer</h3>
+                    <p className={style.aboutBio}>Constance lives in Columbus, Ohio. Her hobbies include Beetle Fighting, Toy Voyaging, Tree Shaping and eating Jello.</p>  
                 </div>
-                <div className={style.aboutItem}>
+                <div className={style.aboutItem2}>
+                    
+                    <img className={style.aboutImage} src={kadeenImg} alt="kadeen-profile" />
                     <h2>Kadeen Jennings</h2>
+                    <h3>WCCI Developer</h3>
+                    <p className={style.aboutBio}>Kadeen lives in Columbus, Ohio. His hobbies include Competitive Duck Herding, Geocaching and eating Jello.</p>  
                     <img className={style.aboutImage} src={kadeenImg} alt="kadeen-profile" width='300' height='auto' />
-                    <p className={style.aboutBio}>I am a software developer with Passion for developing innovative programs that will expedite the efficiency and effectiveness for organizational success. Well-versed in technology and writing code to create systems that are reliable and user-friendly. Skilled leader with 5+ years as a laboratory scientist who has the proven ability to motivate, educate and manage a team of professionals and effectively track changes. Confident communicator, strategic thinker, and innovative creator to develop software.</p>  
+                   
                 </div>
-                <div className={style.aboutItem}>
+                <div className={style.aboutItem3}>
+                    
+                    <img className={style.aboutImage} src={dougImg} alt="doug-profile" />
                     <h2>Doug Holt</h2>
-                    <img className={style.aboutImage} src={dougImg} alt="doug-profile" width='300' height='auto' />
-                    <p className={style.aboutBio}>I live in Columbus, Ohio. I am a student developer at We Can Code IT. My hobbies include Professional Rodeo Clown and eating green Jello</p>  
+                    <h3>WCCI Developer</h3>
+                    <p className={style.aboutBio}>Doug lives in Cleveland, Ohio. His hobbies include Professional Rodeo Clown, Time Travel and eating Jello.</p>  
                 </div>
-                <div className={style.aboutItem}>
+                <div className={style.aboutItem4}>
+                    
+                    <img className={style.aboutImage} src={princeImg} alt="prince-profile" />
                     <h2>Prince Moutima</h2>
-                    <img className={style.aboutImage} src={princeImg} alt="prince-profile" width='300' height='auto' />
-                    <p className={style.aboutBio}>I live in Columbus, Ohio. I am a student developer at We Can Code IT. My hobbies include Photography and Painting</p>  
+                    <h3>WCCI Developer</h3>
+                    <p className={style.aboutBio}>Prince lives in Columbus, Ohio. His hobbies include Newsraiding, Samurai Sword Collecting and Extreme Ironing.</p>  
                 </div>
             </div>
         </div>

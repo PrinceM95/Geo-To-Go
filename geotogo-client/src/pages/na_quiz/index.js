@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import style from './style.module.scss';
+import background from "../../assets/back5.jpg";
 
-const AfricaQPage = () => {
+const NAQPage = () => {
 
     // Properties
 
@@ -11,48 +12,48 @@ const AfricaQPage = () => {
 
     const questions = [
         {
-          text: "How many countries are in the continent of Africa?",
+          text: "What is the capital of Canada",
           options: [
-            { id: 0, text: "82", isCorrect: false },
-            { id: 1, text: "23", isCorrect: false },
-            { id: 2, text: "54", isCorrect: true },
-            { id: 3, text: "Too many!", isCorrect: false },
+            { id: 0, text: "Montreal", isCorrect: false },
+            { id: 1, text: "Toronto", isCorrect: false },
+            { id: 2, text: "Ottawa", isCorrect: true },
+            { id: 3, text: "Vancouver", isCorrect: false },
           ],
         },
         {
-          text: "What year was the Constitution of America written?",
+          text: "What is the capital of The United States",
           options: [
-            { id: 0, text: "1787", isCorrect: true },
-            { id: 1, text: "1776", isCorrect: false },
-            { id: 2, text: "1774", isCorrect: false },
-            { id: 3, text: "1826", isCorrect: false },
+            { id: 0, text: "Washington D.C.", isCorrect: true },
+            { id: 1, text: "Columbus", isCorrect: false },
+            { id: 2, text: "Olympia", isCorrect: false },
+            { id: 3, text: "New York City", isCorrect: false },
           ],
         },
         {
-          text: "Who was the second president of the US?",
+          text: "What is the capital of Honduras?",
           options: [
-            { id: 0, text: "John Adams", isCorrect: true },
-            { id: 1, text: "Paul Revere", isCorrect: false },
-            { id: 2, text: "Thomas Jefferson", isCorrect: false },
-            { id: 3, text: "Benjamin Franklin", isCorrect: false },
+            { id: 0, text: "Tegucigalpa", isCorrect: true },
+            { id: 1, text: "Gracias", isCorrect: false },
+            { id: 2, text: "LaCeiba", isCorrect: false },
+            { id: 3, text: "San Pedro Sula", isCorrect: false },
           ],
         },
         {
-          text: "What is the largest state in the US?",
+          text: "What is the capital of Jamaica?",
           options: [
-            { id: 0, text: "California", isCorrect: false },
-            { id: 1, text: "Alaska", isCorrect: true },
-            { id: 2, text: "Texas", isCorrect: false },
-            { id: 3, text: "Montana", isCorrect: false },
+            { id: 0, text: "Montego Bay", isCorrect: false },
+            { id: 1, text: "Kingston", isCorrect: true },
+            { id: 2, text: "Spanish Town", isCorrect: false },
+            { id: 3, text: "Falmouth", isCorrect: false },
           ],
         },
         {
-          text: "Which of the following countries DO NOT border the US?",
+          text: "What is the capital of Puerto Rico?",
           options: [
-            { id: 0, text: "Canada", isCorrect: false },
-            { id: 1, text: "Russia", isCorrect: true },
-            { id: 2, text: "Cuba", isCorrect: true },
-            { id: 3, text: "Mexico", isCorrect: false },
+            { id: 0, text: "Carolina", isCorrect: false },
+            { id: 1, text: "San Juan", isCorrect: true },
+            { id: 2, text: "Dorado", isCorrect: false },
+            { id: 3, text: "Rio Grande", isCorrect: false },
           ],
         },
       ];
@@ -81,13 +82,10 @@ const AfricaQPage = () => {
 
 
     return (
+      <div className={style.backA} style={{ backgroundImage: `url(${background})` }}>
         <div className={style.quiz}>
-        {/* 1. Header */}
-        <h1>Africa Quiz</h1>
-
-        {/* 2. Current Score */}
-        <h1>Current Score: {score}</h1>
-
+        <div className={style.header1}><h1>North America Quiz</h1></div>
+        <div className={style.header2}><h1>Current Score: {score}</h1></div>
         {showFinalResults ? (
         <div className={style.final_results}>
             <h1>Final Results</h1>
@@ -95,7 +93,7 @@ const AfricaQPage = () => {
             <button onClick={() => restartGame()}>Restart game</button>
         </div>
     ) : (
-        /* 3. Question Card */
+      <div className={style.containerQuiz}>
         <div className={style.question_card}>
             <h2>Question 1 out of 5</h2>
             <h3 className={style.question_text}>{questions[currentQuestion].text}</h3>
@@ -107,10 +105,12 @@ const AfricaQPage = () => {
                     );
                  })}
             </ul>
+          </div>
         </div>
         )}
+      </div>
     </div>
     ); 
 }
     
-    export default AfricaQPage;
+    export default NAQPage;

@@ -6,7 +6,7 @@
     margin-top: 30px;
     font-size: xx-large;
     color: 	white;
-    background: darkorange;
+    background: #006241;
     text-align: center;
 }
 
@@ -37,23 +37,22 @@
     position: fixed;
 }
 
-
 .question_card {
     margin: 0 auto;
+
     background-color: grey;
     padding: 16px;
     border-radius: 16px;
     color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
-        rgba(0, 0, 0.3) 0px 18px 36px -18px;
+        rgba(0, 0, 0.3) 0px 18px 36px -18px; 
     width: 60%;
     height: auto;
-    background-image:  url("../../assets/Savanna.gif");
+    background-image:  url("../../assets/sa.gif");
     background-repeat: no-repeat;
     background-size: 100%;
+    
 }
-
-
 
 ul {
     list-style: none;
@@ -67,6 +66,11 @@ li {
     border-radius: 20px;
     font-size: 20px;
     margin-top: 8px;
+    
+    & li:hover {
+        transition: .5s;
+        transform: scale(1.2);
+    }
 }
 
 .question_text {

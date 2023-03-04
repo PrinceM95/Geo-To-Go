@@ -6,6 +6,8 @@ import 'tippy.js/dist/tippy.css';
 import { useState } from 'react';
 import africaFF from '../../assets/afFigures.gif';
 import quiz from '../../assets/quiz.png';
+import background from "../../assets/Savanna.gif";
+// import world from "../../assets/world4.mp4";
 
 
 const AfricaPage = () => {
@@ -29,9 +31,10 @@ const AfricaPage = () => {
         })
     }
 
-    return (
+    return (           
+        <div className={style.backB} style={{ backgroundImage: `url(${background})` }}>
         <div className={style.africa}>
-            <svg width="475" height="565" viewBox="0 0 504 565" xmlns="http://www.w3.org/2000/svg">
+            <svg width="550" height="690" viewBox="0 0 504 565" xmlns="http://www.w3.org/2000/svg">
                 {countries.map((country, idx) => {
                     return (
                     <Tippy className={style.tippy} content={country.name} key = {idx}>
@@ -62,9 +65,8 @@ const AfricaPage = () => {
             <a href="/africa_quiz" target="_blank" rel="noreferrer">
                 <img src={quiz} className={style.quiz} alt="africa_quiz"></img>
             </a>
+            </div>
         </div>
-
-
     </div>
     );
 }

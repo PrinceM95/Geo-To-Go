@@ -3,8 +3,8 @@
     margin-left: 90px;
     margin-top: 50px;
     border: solid 2px black;
-    background-image: url("../../assets/oceania2.gif");
-    background-size: 140%;
+    background-image: url("../../assets/back5.jpg");
+    background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 1rem;
 }
@@ -12,14 +12,14 @@
 .oceania path {
     fill: #1DB954;
     stroke: black;
-    stroke-width: .5px ;
+    stroke-width: 1px ;
     transition: fill 0.3s;
     transition: all 1s ease;
-    border: none !important;
+    border: 1px !important;
 }
 
 .oceania :hover {
-    fill: #ACE1AF;
+    fill: goldenrod;
 }
 
 .oceanicDetail{
@@ -28,33 +28,34 @@
     padding: 5px;
     border-radius: 1rem;
     position:absolute;
-    top: 112px;
+    top: 50px;
     right: 70px;
     text-align: center;
-    background-color: goldenrod;
+    background-image: url("../../assets/back5.jpg");
+    background-size: 120%;
     border: solid 2px black;
 }
 .oceanicDetail p {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .ocf{
-    max-width: 500px;
-    height: 150px;
-    border-radius: .5rem;
+    width: 40%;
+    height: 175px;
+    border-radius: 1rem;
     border: solid 2px black;
     position: absolute;
-    top: 650px;
-    left: 520px;
+    top: 483px;
+    left: 1085px;
 }
 
 .quiz {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: 625px;
-    left: 1640px;
+    top: 75px;
+    left: 1720px;
     border-radius: 20%;
     transition: all 1s ease;
 }
@@ -67,14 +68,24 @@
     width: 165px;
     height: 50px;
     position: absolute;
-    top: 325px;
-    left: 750px;
+    top: 125px;
+    left: 800px;
     border: solid 1px black;
     border-radius: 1rem;
     transition: all 1s ease;
     font-size: large;
-    color: #301934;
-    background-color: 	#F0E68C;
+    color: white;
+    background-color: 	#2E5090;
     text-align: center;
     font-family: 'M PLUS 1p', sans-serif;
+}
+
+.backB {
+    background: no-repeat center center fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+    position: fixed;
 }

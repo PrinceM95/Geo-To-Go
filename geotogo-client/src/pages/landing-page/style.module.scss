@@ -1,10 +1,12 @@
 body {
     overflow: hidden !important;
 }
+
 .landing{
     background-color: #0a2351;
     min-height: 90vh;
 }
+
 .landing video{
     position: relative;
     right: 0;
@@ -12,6 +14,7 @@ body {
     min-width: 100%;
     min-height: 100%;
 }
+
 .landingHeader{
     position: absolute;    
     color:white;
@@ -21,7 +24,6 @@ body {
     z-index: 100;
     font-size: xx-large;
     text-align: center;
-    // font-size: 100px;
     border-radius: 20px;
 }
 
@@ -36,10 +38,9 @@ body {
     border-radius: 1rem;
     opacity: .9;
     top: 60vh;
-    left: 10vw;
+    left: 15vw;
     z-index: 100;
     margin: auto;
-    // transition: .3s;
     text-align: center;
     transition: all 3s ease;
     text-decoration: none;
@@ -54,7 +55,6 @@ body {
     right: 125px;
     top: 200px;
     text-align: center;
-    
 }
 
 

@@ -1,16 +1,16 @@
 .na {
     width: 50%;
-    margin-left: 90px;
+    margin-left: 60px;
     margin-top: 50px;
     border: solid 2px black;
-    background-image: url("../../assets/na.gif");
-    background-size: 140%;
+    background-image: url("../../assets/back5.jpg");
+    background-size: 120%;
     background-repeat: no-repeat;
     border-radius: 1rem;
 }
 
 .na path {
-    fill: #DADD98;
+    fill: #1DB954;
     stroke: black;
     stroke-width: .5px ;
     transition: fill 0.3s;
@@ -23,13 +23,13 @@
 }
 
 .naff {
-    max-width: 500px;
-    height: 140px;
-    border-radius: .5rem;
+    width: 40%;
+    height: 175px;
+    border-radius: 1rem;
     border: solid 2px black;
     position: absolute;
-    top: 650px;
-    left: 520px;
+    top: 560px;
+    left: 1075px;
 }
 
 .nADetail{
@@ -38,26 +38,28 @@
     padding: 5px;
     background-color: white;
     position:absolute;
-    top: 113px;
+    top: 50px;
     right: 80px;
-    background-color: #C1E1C1;
+    background-image: url("../../assets/back5.jpg");
+    background-size: 100%;
     border-radius: 1rem;
     border: solid 2px rgb(9, 8, 8);
     text-align: center;
     color: rgb(2, 2, 2);
 }
+
 .nADetail p {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
+    color: black;
 }
 
 .quiz {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: 625px;
-    left: 1640px;
-    border-radius: 20%;
+    top: 75px;
+    left: 1675px;
     transition: all 1s ease;
 }
 
@@ -66,17 +68,27 @@
 }
 
 .name {
-    width: 285px;
+    width: 265px;
     height: 50px;
     position: absolute;
-    top: 175px;
+    top: 65px;
     left: 725px;
     border: solid 1px black;
     border-radius: 1rem;
     transition: all 1s ease;
     font-size: large;
     color: white;
-    background-color: 	#00563B;
+    background-color: 	#2E5090;
     text-align: center;
     font-family: 'M PLUS 1p', sans-serif;
+}
+
+.backB {
+    background: no-repeat center center fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+    position: fixed;
 }

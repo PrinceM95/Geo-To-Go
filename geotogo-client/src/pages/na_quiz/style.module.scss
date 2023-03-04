@@ -6,7 +6,7 @@
     margin-top: 30px;
     font-size: xx-large;
     color: 	white;
-    background: darkorange;
+    background: #00693E;
     text-align: center;
 }
 
@@ -37,7 +37,6 @@
     position: fixed;
 }
 
-
 .question_card {
     margin: 0 auto;
     background-color: grey;
@@ -48,7 +47,7 @@
         rgba(0, 0, 0.3) 0px 18px 36px -18px;
     width: 60%;
     height: auto;
-    background-image:  url("../../assets/Savanna.gif");
+    background-image:  url("../../assets/na.gif");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -76,21 +75,18 @@ li {
 
 .final_results {
     margin: 0 auto;
-
     background-color: grey;
     padding: 16px;
     border-radius: 16px;
     color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
         rgba(0, 0, 0.3) 0px 18px 36px -18px;
-
     width: 50%;
     height: auto;
 }
 
 .button {
     margin: 0 auto;
-
     background-color: green;
     padding: 16px;
     border-radius: 16px;
