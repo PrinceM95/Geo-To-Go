@@ -2,31 +2,6 @@
     text-align: center;
 }
 
-.header1 {
-    margin-top: 30px;
-    font-size: xx-large;
-    color: 	white;
-    background: darkorange;
-    text-align: center;
-}
-
-.header2 {
-    width: 265px;
-    height: 40px;
-    margin-left: 490px;
-    margin-top: 100px;
-    border-radius: 1rem;
-    color: 	white;
-    background: darkblue;
-    text-align: center;
-}
-
-.containerQuiz {
-    width: 100%;
-    margin-left: 5px;
-    margin-top: 10px;
-}
-
 .backA {
     background: no-repeat center center fixed;
     background-position: center;
@@ -36,6 +11,7 @@
     width: 100%;
     position: fixed;
 }
+
 
 
 .question_card {
@@ -50,8 +26,7 @@
 
     width: 60%;
     height: auto;
-    
-    background-image:  url("../../assets/Savanna.gif");
+    background-image:  url("../../assets/oceania2.gif");
     background-repeat: no-repeat;
     background-size: 100%;
 }

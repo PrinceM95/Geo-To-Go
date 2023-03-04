@@ -6,6 +6,7 @@ import euFF from '../../assets/euFigures.gif';
 import style from './style.module.scss';
 import { useState } from 'react';
 import quiz from '../../assets/quiz.png';
+import background from "../../assets/eu.gif";
 
 
 const EuropePage = () => {
@@ -30,8 +31,9 @@ const EuropePage = () => {
     }
 
     return (
+        <div className={style.backB} style={{ backgroundImage: `url(${background})` }}>
         <div className={style.europe}>
-        <svg width="575" height="600" version="1.2" viewBox="0 0 1000 684"  xmlns="http://www.w3.org/2000/svg">
+        <svg width="950" height="725" version="1.2" viewBox="0 0 1000 684"  xmlns="http://www.w3.org/2000/svg">
         {countries.map((country, idx) => {
                     return (
                     <Tippy content={country.name} key = {idx}>
@@ -59,12 +61,12 @@ const EuropePage = () => {
             </div>
 
         <div className={style.quizLogo}>
-            <a href="/africa_quiz" target="_blank" rel="noreferrer">
-                <img src={quiz} className={style.quiz} alt="africa_quiz"></img>
+            <a href="/europe_quiz" target="_blank" rel="noreferrer">
+                <img src={quiz} className={style.quiz} alt="eu_quiz"></img>
             </a>
         </div>
-
-        </div>
+    </div>
+</div>
         ); 
     }
 

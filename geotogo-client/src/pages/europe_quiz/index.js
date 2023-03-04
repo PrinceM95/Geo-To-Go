@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import style from './style.module.scss';
+import background from "../../assets/back5.jpg";
 
-const AfricaQPage = () => {
+const EuropeQPage = () => {
 
     // Properties
 
@@ -11,48 +12,48 @@ const AfricaQPage = () => {
 
     const questions = [
         {
-          text: "How many countries are in the continent of Africa?",
+          text: "What is the capital of Greece?",
           options: [
-            { id: 0, text: "82", isCorrect: false },
-            { id: 1, text: "23", isCorrect: false },
-            { id: 2, text: "54", isCorrect: true },
-            { id: 3, text: "Too many!", isCorrect: false },
+            { id: 0, text: "Chania", isCorrect: false },
+            { id: 1, text: "Corfu", isCorrect: false },
+            { id: 2, text: "Athens", isCorrect: true },
+            { id: 3, text: "Kalamata", isCorrect: false },
           ],
         },
         {
-          text: "What year was the Constitution of America written?",
+          text: "What is the capital of Spain?",
           options: [
-            { id: 0, text: "1787", isCorrect: true },
-            { id: 1, text: "1776", isCorrect: false },
-            { id: 2, text: "1774", isCorrect: false },
-            { id: 3, text: "1826", isCorrect: false },
+            { id: 0, text: "Madrid", isCorrect: true },
+            { id: 1, text: "Barcelona", isCorrect: false },
+            { id: 2, text: "Bilbao", isCorrect: false },
+            { id: 3, text: "Granada", isCorrect: false },
           ],
         },
         {
-          text: "Who was the second president of the US?",
+          text: "What is the capital of Turkey?",
           options: [
-            { id: 0, text: "John Adams", isCorrect: true },
-            { id: 1, text: "Paul Revere", isCorrect: false },
-            { id: 2, text: "Thomas Jefferson", isCorrect: false },
-            { id: 3, text: "Benjamin Franklin", isCorrect: false },
+            { id: 0, text: "Istanbul", isCorrect: true },
+            { id: 1, text: "Ankara", isCorrect: false },
+            { id: 2, text: "Antalya", isCorrect: false },
+            { id: 3, text: "Bursa", isCorrect: false },
           ],
         },
         {
-          text: "What is the largest state in the US?",
+          text: "What is the capital of Portugal?",
           options: [
-            { id: 0, text: "California", isCorrect: false },
-            { id: 1, text: "Alaska", isCorrect: true },
-            { id: 2, text: "Texas", isCorrect: false },
-            { id: 3, text: "Montana", isCorrect: false },
+            { id: 0, text: "Porto", isCorrect: false },
+            { id: 1, text: "Lisbon", isCorrect: true },
+            { id: 2, text: "Faro", isCorrect: false },
+            { id: 3, text: "Sintra", isCorrect: false },
           ],
         },
         {
-          text: "Which of the following countries DO NOT border the US?",
+          text: "What is the capital of France?",
           options: [
-            { id: 0, text: "Canada", isCorrect: false },
-            { id: 1, text: "Russia", isCorrect: true },
-            { id: 2, text: "Cuba", isCorrect: true },
-            { id: 3, text: "Mexico", isCorrect: false },
+            { id: 0, text: "Marseille", isCorrect: false },
+            { id: 1, text: "Paris", isCorrect: true },
+            { id: 2, text: "Nice", isCorrect: false },
+            { id: 3, text: "Bordeaux", isCorrect: false },
           ],
         },
       ];
@@ -81,9 +82,10 @@ const AfricaQPage = () => {
 
 
     return (
+      <div className={style.backA} style={{ backgroundImage: `url(${background})` }}>
         <div className={style.quiz}>
         {/* 1. Header */}
-        <h1>Africa Quiz</h1>
+        <h1>Europe Quiz</h1>
 
         {/* 2. Current Score */}
         <h1>Current Score: {score}</h1>
@@ -109,8 +111,9 @@ const AfricaQPage = () => {
             </ul>
         </div>
         )}
+      </div>
     </div>
     ); 
 }
     
-    export default AfricaQPage;
+    export default EuropeQPage;

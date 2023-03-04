@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import style from './style.module.scss';
-// import world from '../../assets/world4.mp4';
+import background from "../../assets/back5.jpg";
+
 
 const AfricaQPage = () => {
 
@@ -12,12 +13,12 @@ const AfricaQPage = () => {
 
     const questions = [
         {
-          text: "How many countries are in the continent of Africa?",
+          text: "What is the capital of Nigeria?",
           options: [
-            { id: 0, text: "82", isCorrect: false },
-            { id: 1, text: "23", isCorrect: false },
-            { id: 2, text: "54", isCorrect: true },
-            { id: 3, text: "Too many", isCorrect: false },
+            { id: 0, text: "Lagos", isCorrect: false },
+            { id: 1, text: "Kano", isCorrect: false },
+            { id: 2, text: "Abuja", isCorrect: true },
+            { id: 3, text: "Aba", isCorrect: false },
           ],
         },
         {
@@ -51,9 +52,9 @@ const AfricaQPage = () => {
           text: "What is the capital of Ethiopia?",
           options: [
             { id: 0, text: "Addis Ababa", isCorrect: true },
-            { id: 1, text: "Russia", isCorrect: false },
-            { id: 2, text: "Cuba", isCorrect: false },
-            { id: 3, text: "Mexico", isCorrect: false },
+            { id: 1, text: "Hawassa", isCorrect: false },
+            { id: 2, text: "Gondar", isCorrect: false },
+            { id: 3, text: "Harar", isCorrect: false },
           ],
         },
       ];
@@ -81,12 +82,11 @@ const AfricaQPage = () => {
     }
 
     return (
+      // <div className={style.container}>
+      <div className={style.backA} style={{ backgroundImage: `url(${background})` }}>
         <div className={style.quiz}>
-        {/* 1. Header */}
-        <h1>Africa Quiz</h1>
-
-        {/* 2. Current Score */}
-        <h1>Current Score: {score}</h1>
+        <div className={style.header1}><h1>Africa Quiz</h1></div>
+        <div className={style.header2}><h1>Current Score: {score}</h1></div>
 
         {showFinalResults ? (
         <div className={style.final_results}>
@@ -96,6 +96,7 @@ const AfricaQPage = () => {
         </div>
     ) : (
         /* 3. Question Card */
+        <div className={style.containerQuiz}>
         <div className={style.question_card}>
             <h2>Question 1 out of 5</h2>
             <h3 className={style.question_text}>{questions[currentQuestion].text}</h3>
@@ -107,8 +108,10 @@ const AfricaQPage = () => {
                     );
                  })}
             </ul>
+            </div>
         </div>
-        )}      
+        )} 
+      </div>  
     </div>
     ); 
 }

@@ -6,6 +6,7 @@ import {countries,getCountryByName} from './data';
 import style from './style.module.scss';
 import saFF from '../../assets/saFigures.gif';
 import quiz from '../../assets/quiz.png';
+import background from "../../assets/sa.gif";
 
 const SAPage = () => {
     const[data,setData]= useState({})
@@ -29,6 +30,7 @@ const SAPage = () => {
     }
 
     return (
+        <div className={style.backB} style={{ backgroundImage: `url(${background})` }}>
         <div className={style.sa}>
             <svg width="800" height="625"version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
                       {countries.map((country, idx) => {
@@ -58,12 +60,12 @@ const SAPage = () => {
             </div>
 
             <div className={style.quizLogo}>
-            <a href="/africa_quiz" target="_blank" rel="noreferrer">
-                <img src={quiz} className={style.quiz} alt="africa_quiz"></img>
+            <a href="/sa_quiz" target="_blank" rel="noreferrer">
+                <img src={quiz} className={style.quiz} alt="sa_quiz"></img>
             </a>
         </div>
-
-        </div>
+    </div>
+</div>
     );
 }
 

@@ -6,7 +6,7 @@ import 'tippy.js/dist/tippy.css';
 import { useState } from 'react';
 import naFF from '../../assets/naFigures.gif';
 import quiz from '../../assets/quiz.png';
-
+import background from "../../assets/na.gif";
 
 const NAPage = () => {
     const[data,setData]= useState({})
@@ -30,8 +30,9 @@ const NAPage = () => {
     }
 
     return (
+        <div className={style.backB} style={{ backgroundImage: `url(${background})` }}>
         <div className={style.na}>
-            <svg width="1550" height="585" viewBox="100 0 1604 545" xmlns="http://www.w3.org/2000/svg">
+            <svg width="1800" height="585" viewBox="100 0 1604 545" xmlns="http://www.w3.org/2000/svg">
                 {countries.map((country, idx) => {
                     return (
                     <Tippy content={country.name} key = {idx}>
@@ -58,12 +59,12 @@ const NAPage = () => {
             </div>
 
             <div className={style.quizLogo}>
-            <a href="/africa_quiz" target="_blank" rel="noreferrer">
-                <img src={quiz} className={style.quiz} alt="africa_quiz"></img>
+            <a href="/na_quiz" target="_blank" rel="noreferrer">
+                <img src={quiz} className={style.quiz} alt="na_quiz"></img>
             </a>
         </div>
-
-        </div>
+    </div>
+</div>
     );
 }
     
