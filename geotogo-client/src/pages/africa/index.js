@@ -7,6 +7,7 @@ import { useState } from 'react';
 import africaFF from '../../assets/afFigures.gif';
 import quiz from '../../assets/quiz.png';
 import background from "../../assets/Savanna.gif";
+// import world from "../../assets/world4.mp4";
 
 
 const AfricaPage = () => {
@@ -30,7 +31,7 @@ const AfricaPage = () => {
         })
     }
 
-    return (
+    return (           
         <div className={style.backB} style={{ backgroundImage: `url(${background})` }}>
         <div className={style.africa}>
             <svg width="550" height="690" viewBox="0 0 504 565" xmlns="http://www.w3.org/2000/svg">

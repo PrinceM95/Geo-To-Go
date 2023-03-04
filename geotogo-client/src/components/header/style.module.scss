@@ -17,9 +17,7 @@ body {
 
     & h1{
         color: #FEBE10;
-        // margin-left: 11rem;
         border-radius: 6px;
-        // min-width: 75px;
         font-size: xx-large;
 
         & a{
@@ -33,6 +31,7 @@ body {
         padding: 5px;
     }
 }
+
 .navList {
     display: flex;
     width: 70%;
@@ -41,32 +40,23 @@ body {
     a:last-child{
         position: absolute;
         right: 0;
-        // margin-left: 200px;
     }
 
     & a {
         align-items: center;
-        // border: 1px solid black;
-        // border-radius: 6px;
         display: flex;
         justify-content: center;
         list-style-type: none;
         margin: 0 20px;
-        // min-width: 75px;
         padding: 6px;
         text-decoration: none;
-        // background-color: #ACE1AF;
-        // font-family: 'Zilla Slab', serif;
-        // font-size: large;
         font-style: bold;
         font-size: x-large;
     }
 
     & a:hover {
-    //     background-color: #FEBE10;
         transition: .5s;
         transform: scale(1.2);
-        
     }
 }
 

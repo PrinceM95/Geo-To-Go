@@ -84,11 +84,8 @@ const OceaniaQPage = () => {
     return (
       <div className={style.backA} style={{ backgroundImage: `url(${background})` }}>
         <div className={style.quiz}>
-        {/* 1. Header */}
-        <h1>Oceania Quiz</h1>
-
-        {/* 2. Current Score */}
-        <h1>Current Score: {score}</h1>
+        <div className={style.header1}><h1>Oceania Quiz</h1></div>
+        <div className={style.header2}><h1>Current Score: {score}</h1></div>
 
         {showFinalResults ? (
         <div className={style.final_results}>
@@ -97,7 +94,7 @@ const OceaniaQPage = () => {
             <button onClick={() => restartGame()}>Restart game</button>
         </div>
     ) : (
-        /* 3. Question Card */
+      <div className={style.containerQuiz}>
         <div className={style.question_card}>
             <h2>Question 1 out of 5</h2>
             <h3 className={style.question_text}>{questions[currentQuestion].text}</h3>
@@ -109,6 +106,7 @@ const OceaniaQPage = () => {
                     );
                  })}
             </ul>
+          </div>
         </div>
         )}
       </div>

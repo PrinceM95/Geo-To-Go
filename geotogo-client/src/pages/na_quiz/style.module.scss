@@ -2,6 +2,31 @@
     text-align: center;
 }
 
+.header1 {
+    margin-top: 30px;
+    font-size: xx-large;
+    color: 	white;
+    background: #00693E;
+    text-align: center;
+}
+
+.header2 {
+    width: 265px;
+    height: 40px;
+    margin-left: 490px;
+    margin-top: 100px;
+    border-radius: 1rem;
+    color: 	white;
+    background: darkblue;
+    text-align: center;
+}
+
+.containerQuiz {
+    width: 100%;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
 .backA {
     background: no-repeat center center fixed;
     background-position: center;
@@ -14,17 +39,14 @@
 
 .question_card {
     margin: 0 auto;
-
     background-color: grey;
     padding: 16px;
     border-radius: 16px;
     color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
         rgba(0, 0, 0.3) 0px 18px 36px -18px;
-
     width: 60%;
     height: auto;
-    
     background-image:  url("../../assets/na.gif");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -53,21 +75,18 @@ li {
 
 .final_results {
     margin: 0 auto;
-
     background-color: grey;
     padding: 16px;
     border-radius: 16px;
     color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
         rgba(0, 0, 0.3) 0px 18px 36px -18px;
-
     width: 50%;
     height: auto;
 }
 
 .button {
     margin: 0 auto;
-
     background-color: green;
     padding: 16px;
     border-radius: 16px;

@@ -82,7 +82,6 @@ const AfricaQPage = () => {
     }
 
     return (
-      // <div className={style.container}>
       <div className={style.backA} style={{ backgroundImage: `url(${background})` }}>
         <div className={style.quiz}>
         <div className={style.header1}><h1>Africa Quiz</h1></div>
@@ -95,7 +94,6 @@ const AfricaQPage = () => {
             <button onClick={() => restartGame()}>Restart game</button>
         </div>
     ) : (
-        /* 3. Question Card */
         <div className={style.containerQuiz}>
         <div className={style.question_card}>
             <h2>Question 1 out of 5</h2>
